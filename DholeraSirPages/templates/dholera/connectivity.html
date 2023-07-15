@@ -1,0 +1,62 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+{% block title %}
+  
+Connectivity | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+
+<div>
+    <div>
+      <img class="w-full h-auto max-sm:h-36" src="{% static 'dholeraSir-images\Conectivity\conectivity_dholera_sir_header.jpg' %}" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="mt-20 px-16">
+
+    <div class="flex items-center justify-center flex-grow gap-10 flex-initial flex-wrap">
+
+
+      <div>
+        <a href="{% url 'DholeraSirPages:image_view' 'Road-Connectivity' %}">
+        <img class="border-[3px] border-purple-900 rounded-2xl shadow-2xl" src="{% static 'dholeraSir-images\Conectivity\thumbnail\Road_Connectivity_dholera_SIR_s.jpg' %}" alt="">
+      </a>
+      </div>
+
+      <div>
+        <a href="{% url 'DholeraSirPages:image_view' 'Air-Connectivity' %}">
+        <img class="border-[3px] border-purple-900 rounded-2xl shadow-2xl" src="{% static 'dholeraSir-images\Conectivity\thumbnail\Air_Connectivity_Dholera_SIR_s.jpg' %}" alt="">
+        </a>
+      </div>
+
+      <div>
+        <a href="{% url 'DholeraSirPages:image_view' 'Rail-Connectivity' %}">
+        <img class="border-[3px] border-purple-900 rounded-2xl shadow-2xl" src="{% static 'dholeraSir-images\Conectivity\thumbnail\Rail_Connectivity_Dholera_SIR_s.jpg' %}" alt="">
+</a>
+      </div>
+
+      <div>
+        <a href="{% url 'DholeraSirPages:image_view' 'Sea-Connectivity' %}">
+        <img class="border-[3px] border-purple-900 rounded-2xl shadow-2xl" src="{% static 'dholeraSir-images\Conectivity\thumbnail\Sea_Connectivity_Dholera_SIR_s.jpg' %}" alt="">
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,123 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+Metro | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+
+<div>
+  
+  <div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+
+    <script>
+      function changeImage() {
+          var image = document.getElementById("myImage");
+          if (window.innerWidth < 700) {
+            image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\metro\high-speed-rail-header-m.jpg' %}"; // Replace with the path to the new image
+          } else {
+            image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\metro\high-speed-rail-header.jpg' %}"; // Replace with the original image path
+          }
+        }
+    
+        window.addEventListener("load", changeImage);
+        window.addEventListener("resize", changeImage);
+      </script>
+  </div>
+
+</div>
+
+
+
+<div class="mt-10">
+
+  <div class="bg-green-300 py-3 text-center text-black font-semibold text-xl">
+    <h1>High Speed Metro And Rail</h1>
+  </div>
+</div>
+
+<div class="mt-8 px-10">
+
+  <div class=" float-left m-[10px]">
+    <img class=" shadow-xl rounded-lg" src="{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\metro\metro_train_Dholera-SIR.jpg' %}" alt="">
+  </div>
+
+  <div style="letter-spacing: 0.4px;" class="font-semibold text-gray-600 text-base py-5 leading-6 ">
+    <p>
+      A proposal to develop a high speed metro rail that shall pass through Ahmedabad-Dholera-Gandhinagar was submitted under the DMIC master plan and approved by the central government. The project intends to augment the regional connectivity with Gujarat Dholera smart cityand develop a high speed urban transport system that shall links Gujarat to the international airport, urban centres, main railway stations and bus depos of Dholera. Linking up the metro with Dholera international airport shall play a vital role in the success of the airport.
+    </p>
+
+    <p class="mt-5">
+      The project shall be divided in two phases with phase 1 connecting Ahmedabad to Gandhinagar while phase 2 shall link Gandhinagar to Dholera Smart city via GIFT city. Spanning 100 kilometers in length, the first phase of the project shall be built over 61.55 kms while the second phase connecting Dholera shall cover the remaining 38.45 kilometers. The following shall be the route map for both phases.
+
+    </p>
+    <!--  -->
+    <div class="mt-20 flex justify-center items-center">
+   
+
+    <table cellpadding="4" class="border border-x-0 w-[98%]  max-sm:text-sm border-spacing-x-14 border-spacing-y-8 p-5 text-blue-900 font-semibold text-lg">
+
+        <tr class="border border-x-0">
+            <td rowspan="2" class="">Phase 1</td>
+            <td class=""> APMC/Vasna- Akshardham (Gandhinagar) via Ashram Road-Motera-Koba Circle</td>
+            <td class=""> 32.65 Kms</td>
+    
+          </tr>
+          <tr class="border border-x-0
+                        ">
+            <td class="">Ahmedabad junction - Thaltej via Delhi Darwaja</td>
+            <td class="">10.9 Kms</td>
+          </tr>
+
+
+        <tr class="border border-x-0 ">
+            <td rowspan="2" class="">Phase 2</td>
+            <td class=""> Koba Circle - GIFT City - Gandhinagar</td>
+            <td class=""> 10 Kms</td>
+    
+          </tr>
+          <tr class="border border-x-0
+                          ">
+            <td class="">Koba Circle - Airport</td>
+            <td class="">8 kms</td>
+          </tr>
+    </table>
+    
+
+</div>
+
+    <!-- <p class="mt-5 text-lg ">
+                Smart City In Dholera
+            </p> -->
+
+    <!--  -->
+    <p class="mt-5">
+      The project shall be developed under complete authority of a special purpose vehicle(GoG owned). This vehicle shall undertake and complete crucial tasks such as acquiring land for development of metro corridor, metro stations and bus stations. It shall also be responsible for seamless shifting of the utilities in a phased manner. The special purpose vehicle has been formed with an initial paid up capital of Rupees 10 Crores and authorized capital of Rupees 200 Crores. The SPV shall also own responsibility of discussing the funding pattern for the project with both state and central government and finalizing it thereafter.
+    </p>
+
+    <p class="mt-5">
+
+      The smart city Dholerametro project is expected to be a carrier of 80,000 passengers per hour (40,000 in each direction) and 1.70 million commuters are expected to use by the year 2031.
+
+
+    </p>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+{% endblock content %}

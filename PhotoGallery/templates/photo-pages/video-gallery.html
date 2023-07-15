@@ -1,0 +1,122 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Video gallery | Dholera Metro City
+{% endblock title %}
+
+{% block content %}
+
+<div>
+  <div>
+    <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+  </div>
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (window.innerWidth < 700) {
+        image.src = "{% static 'gallery\photos\video-gallery\video_gallery_header_m.jpg' %}"; // Replace with the path to the new image
+      } else {
+        image.src = "{% static 'gallery\photos\video-gallery\video_gallery_header.jpg' %}"; // Replace with the original image path
+      }
+    }
+
+    window.addEventListener("load", changeImage);
+    window.addEventListener("resize", changeImage);
+  </script>
+</div>
+
+
+
+<div class="mt-10 px-8 grid grid-cols-2 items-center justify-center max-sm:grid-cols-1 gap-5 ">
+
+  <div class="flex justify-center items-center">
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/RGzLvO9KRJM" title="ABCD Building Dholera SIR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/hQb4iC3U1-g?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="flex justify-center items-center">
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/X1GvIWQx9-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="flex justify-center items-center">
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/6RgZjITJHG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/vglxXT1cQTs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/N7ev8IHPrOc?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/tLIdc6sfcYY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/R5F-U_JZhxU?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/ijxH5BBBUrQ?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/K4fPecZyyGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="flex justify-center items-center">
+
+    <iframe height="316" width="450" src="https://www.youtube.com/embed/LuMIwQ4ViTY?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+
+
+
+    <div class="flex justify-center items-center">
+
+        <iframe height="316" width="450" src="https://www.youtube.com/embed/toSGy2oGD5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+
+
+        <div class="flex justify-center items-center">
+
+
+            <iframe height="316" width="450" src="https://www.youtube.com/embed/FuUx3FeMOaE?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+
+</div>
+
+{% endblock content %}

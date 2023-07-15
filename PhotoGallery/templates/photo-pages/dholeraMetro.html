@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+ Dholera Metro City
+{% endblock title %}
+
+{% block content %}
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'gallery\photos\Dholera_metro_city_photo_gallery_header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'gallery\photos\Dholera_metro_city_photo_gallery_header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+  <div class="mt-5 flex flex-wrap gap-7 items-center justify-center px-4">
+    
+    {% for images in Dholeraimages %}
+    <a target="_blank" href="{% static 'gallery\photos\dholera-metro-city\Dholera_Metro_City_amenities_' %}{{ images }}.jpg">
+    <img style="border: 3px solid brown;" class=" shadow-xl rounded-lg" src="{% static 'gallery\photos\dholera-metro-city\Dholera_Metro_City_amenities_' %}{{ images }}.jpg" alt=""></a>
+
+    {% endfor %}
+
+  </div>
+
+
+
+  
+<section style="margin-top: 10rem;" class="px-7">
+    <div  class="flex flex-wrap  gap-10 items-center justify-center ">
+  
+      <a class="" href="{%  url 'DholeraSirPages:Dholera-Sir-Work-Progress' %}">
+        <img src="{% static 'gallery\photos\site_progress_tag.jpg' %}" alt="site_progress_tag"> </a>
+  
+      <a href="{% url 'PhotoGallery:DMC-Site-Progress' %}">
+        <img src="{% static 'gallery\photos\site_progress.jpg' %}" alt="site_progress"></a>
+  
+      <a href="{% url 'PhotoGallery:Investor-Visit' %}">
+        <img src="{% static 'gallery\photos\investor-visit-memories.jpg' %}" alt="investor-visit-memories"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-Dholera-Metro-City' %}">
+        <img src="{% static  'gallery\photos\Dholera_Metro_City.jpg' %}" alt="Dholera_Metro_City"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-summit-2017' %}">
+        <img src="{% static 'gallery\photos\summit_2017.jpg' %}" alt="summit_2017"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-summit-2018' %}">
+        <img src="{% static 'gallery\photos\gpbs-summit.jpg' %}" alt="gpbs-summit"></a>
+  
+  
+  
+  
+    </div>
+  
+  </section>
+  
+
+
+  
+
+{% endblock content %}

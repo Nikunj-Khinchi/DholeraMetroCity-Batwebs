@@ -1,0 +1,385 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+DFC | Dholera Metro City  
+
+{% endblock title %}
+
+{% block content %}
+    
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'dholeraSir-images\DFC\DFC_header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'dholeraSir-images\DFC\DFC_header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+
+  <section class="mt-4 px-9">
+
+    <style>
+      .nav-box {
+        background-color: rgb(108, 0, 108);
+      }
+  
+      .nav-box:hover {
+        background-color: rgb(28, 28, 134);
+      }
+    </style>
+  
+    <div class="text-center text-sm font-bold text-white grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-2 gap-5 justify-center items-center">
+      <div class="nav-box rounded-xl ">
+  
+        <a href="#DFC-Projects"> <button class="   p-4">DFC Project Details</button></a>
+      </div>
+  
+    
+      <div class="nav-box  rounded-xl ">
+  
+        <a href="#implementation"> <button class="    p-4">Project implementation - DFC</button></a>
+      </div>
+  
+      <div class="nav-box  rounded-xl ">
+        <a href="#status"> <button class="    p-4">Current Status -DFC </button></a>
+  
+      </div>
+  
+  
+  
+    </div>
+  
+  </section>
+
+
+
+  <section class="px-4 mt-5 font-semibold text-gray-600 leading-8">
+
+    <div id="Vision" class="  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+            DFC PROJECT DETAILS
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4"> 
+
+        <div>
+            <img class="float-left m-[10px] max-sm:m-[4px] h-[30rem] rounded-lg shadow-lg border" src="{% static 'dholeraSir-images\DFC\DFC.jpg' %}" alt="">
+        </div>
+
+        <div>
+            <p>Government of India has proposed setting up of a Dedicated Freight Corridor (DFC) between Delhi and Mumbai. DFC will be high axel new railway connectivity with computerized control and multi-modal linkages. Out of the total 1483 kms of the length of DFC, 38% is falling in Gujarat. The area of 150 kms on both sides of the DFC will be developed as the Industrial Corridor.</p>
+
+            <p class="mt-4">
+                This Delhi-Mumbai Industrial Corridor(DMIC) will be highly impacted industrial corridor on both side of the DFC. Almost one third of the proposed investments of about 90 billion US dollars in DMIC is expected to take place in Gujarat alone.
+
+            </p>
+
+            <p class="mt-4">
+                As part of DMIC, twenty four mega industrial nodes have been proposed between Delhi and Mumbai. Out of them, six mega industrial nodes (four industrial areas and two investment regions) have been proposed for the State of Gujarat. Identified industrial nodes have to be developed as Global Manufacturing and Commercial Hubs.
+            </p>
+
+            <p class="mt-4">
+                All kinds of infrastructure both within and outside the nodes also have to be developed with global standards; Government of Gujarat has not only given its full commitment for the DFC and DMIC projects but has been actively working with the Government of India on the same.
+            </p>
+
+            <div class=" mt-4 flex items-center flex-row  gap-3">
+
+                <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        
+                <div>
+        
+                  <h1 class="">
+                    Length of western DFC:- 1535-km
+        
+                  </h1>
+                </div>
+
+              </div>
+              <div class="mt-4 flex items-center flex-row  gap-3">
+
+                <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        
+                <div>
+        
+                  <h1 class="">
+                    Distribution of DFC in six States
+        
+                  </h1>
+                </div>
+              </div>
+
+
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col items-center justify-center max-sm:text-sm">
+
+       
+        <table class="border-collapse border-2 p-2 text-center max-sm:w-[100%] w-[80%]">
+            <tr>
+              <td class="border-2">Uttar Pradesh</td>
+              <td class="border-2">22 km (1.4%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">NCR of Delhi</td>
+              <td class="border-2">115 km (7.5%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">Haryana</td>
+              <td class="border-2">130 km (8.5%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">Rajasthan</td>
+              <td class="border-2">553 km (36%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">Gujarat</td>
+              <td class="border-2">565 km (36.8%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">Maharashtra</td>
+              <td class="border-2">150 km (9.8%)</td>
+            </tr>
+            <tr>
+              <td class="border-2">Total</td>
+              <td class="border-2">1535 Kms(100%)</td>
+            </tr>
+          </table>
+          
+          
+          
+          <table border="1" class="border-2 mt-7 max-sm:w-[100%] w-[80%]" cellpadding="3" cellspacing="0" >
+            
+            <tr class="border-2 text-white p-2 text-center">
+            <td width="20%" class="border-2" bgcolor="#666666"><span class="style2"></span></td>
+            <td width="35%" class="border-2" bgcolor="#666666"><span class="style2">Complete Stretch of Western DFC</span></td>
+            <td width="47%" class="border-2" bgcolor="#666666"><span class="style2">Stretch of Western DFC passing thru Gujarat</span></td>
+            </tr>
+            <tr class="border-2 text-center">
+            <td height="65" class="border-2">DFC Length</td>
+            <td class="border-2">1535 Kms</td>
+            <td class="border-2">565 Km</td>
+            </tr>
+            <tr class="text-center">
+            <td height="63" class="border-2">Project Cost</td>
+            
+            <td class="border-2">Rs. 30,327 Crs.</td>
+            <td class="border-2">Rs. 12,000 Crs.</td>
+            </tr>
+            
+            </table>
+            
+
+      </div>
+
+      <!--  -->
+
+      <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-blue-900 text-xl  font-bold">
+            DFC Junctions in Gujarat
+    
+          </h1>
+        </div>
+      </div>
+
+      <div>
+        
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Gothangam- KRIBHCO, Steel Plants, Dahej port, Bharuch- Dahej Investment Region, Surat – Navsari Industrial Region etc.
+
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Makarpura- Vadodara – Bharuch Industrial Area, Bharuch – Dahej Investment region, Dahej port etc.
+
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Anand- Ahmedabad- Dholera Investment region, Ports of Pipavav , Bhavnagar etc.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Anand- Ahmedabad- Dholera Investment region, Ports of Pipavav , Bhavnagar etc.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Palanpur- Palanpur- Mehsana Industrial area & Ports in Kutch area like Kandla, Gandhidham, Mundra etc.
+
+          </h1>
+        </div>
+      </div>
+
+      </div>
+    
+
+      <!--  -->
+
+      <div id="implementation" class="mt-12  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+            PROJECT IMPLEMENTATION SCHEDULE-DFC
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <img class="" src="{% static 'dholeraSir-images\DFC\DFC2.jpeg' %}" alt="">
+      </div>
+
+
+
+
+      <div id="status" class="mt-8  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+            CURRENT STATUS-DFC
+          </h1>
+        </div>
+      </div>
+
+      <div id="" class="mt-8  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-blue-900 text-xl  font-bold">
+            Award of Contract
+
+    
+          </h1>
+        </div>
+      </div>
+
+      <p class="mt-4">
+        Design and Build Contract for 54 Major and Important Bridges on the Western Corridor between Vaitarana and Surat (200 Kms approximately Rs 600 Cr) awarded.
+      </p>
+
+
+      <div id="" class="mt-8  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-blue-900 text-xl  font-bold">
+            Land Acquisition
+
+    
+          </h1>
+        </div>
+      </div>
+
+      <div>
+        <div class="mt-4 flex items-center flex-row  gap-3">
+
+            <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+            <div>
+    
+              <h1 class="">
+                Notification for acquisition of land in Gujarat issued for 309 kms out of 565 kms.
+    
+              </h1>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center flex-row  gap-3">
+
+            <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+            <div>
+    
+              <h1 class="">
+                As per Railway Act land acquisition process to be necessarily completed in one year.
+    
+              </h1>
+            </div>
+          </div>
+
+      </div>
+
+
+
+
+  </section>
+
+
+{% endblock content %}

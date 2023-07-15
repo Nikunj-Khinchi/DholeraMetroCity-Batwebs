@@ -1,0 +1,135 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+Express Way | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+
+<div>
+
+  <div>
+    <img  id="myImage" class="w-full max-sm:w-auto h-36" src="" alt="">
+  </div>
+
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (window.innerWidth < 700) {
+        image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\express-way\ahmedabad-dholera-express-way-header-m.jpg' %}"; // Replace with the path to the new image
+      } else {
+        image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\express-way\ahmedabad-dholera-express-way-header.jpg' %}"; // Replace with the original image path
+      }
+    }
+
+    window.addEventListener("load", changeImage);
+    window.addEventListener("resize", changeImage);
+  </script>
+</div>
+
+
+<div class="mt-5">
+
+  <div class="bg-green-300 py-3 text-center text-black font-semibold text-xl">
+    <h1>Six Lane Expressway</h1>
+  </div>
+</div>
+
+<div class="mt-8 px-10 max-sm:px-3">
+
+  <div class=" float-left m-[10px]">
+    <img class=" shadow-xl rounded-lg" src="{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\express-way\early_project_1_img.jpg' %}" alt="">
+  </div>
+
+  <div style="letter-spacing: 0.4px;" class="font-semibold text-gray-600 text-base py-5 leading-6 ">
+    <p>
+      A six lane dual carriageway highway shall be built with provisions to extend it up to 10 lanes in Gujarat Dholera Metro city. Initially, it shall be built in a 4 lane format with two lanes on each side and shall be further extended in due time. This project had been proposed in the master plan of the Delhi Mumbai
+    </p>
+
+    <p class="mt-5">
+      Industrial Corridor and approved by the central government and shall incur an estimated project cost of Rs. 900.39 crores.
+
+
+    </p>
+
+
+    <p class="mt-5">
+      Dholera SIR project shall be divided into six town planning schemes and shall be built in three different phases based on the economic activities that shall occur in each phase of development. The last of all phase is expected to get completed by 2040. By such time, Dholera Project shall be home to 2 million people. These people shall be supported by over 8 lakh employment opportunities that shall be generated from the industrial and manufacturing units that shall be developed in the city. As per sources, Dholera is being envisaged as a global trading and manufacturing hub.
+
+    </p>
+
+
+    <p class="mt-5">
+      As the 100 smart cities shall embark on their journey of creating a better India, Dholera SIR Project shall light the way for them.
+
+
+    </p>
+
+    <!--
+
+      -->
+    <div class="mt-20">
+
+
+      <table class="border border-x-0 border-t-0  p-5 text-blue-900 font-semibold text-lg">
+
+        <caption>Expected IRR of the project</caption>
+
+
+
+        <tr class="border border-x-0">
+          <td class="p-4">Economic IRR</td>
+          <td class="pl-96 max-md:pl-20"> 31.60%</td>
+
+
+        </tr>
+
+        <tr class="border border-x-0">
+          <td class="p-4">Project IRR</td>
+          <td class="pl-96 max-md:pl-20"> 12.00%</td>
+
+
+        </tr>
+
+
+        <tr class="border border-x-0">
+          <td class="p-4">Equity IRR</td>
+          <td class="pl-96 max-md:pl-20"> 12.32%</td>
+
+
+        </tr>
+
+      </table>
+
+
+    </div>
+
+
+    <p class="mt-5">
+      The project shall be developed under complete authority of a special purpose vehicle(GoG owned). This vehicle shall undertake and complete crucial tasks such as acquiring land for development of metro corridor, metro stations and bus stations. It shall also be responsible for seamless shifting of the utilities in a phased manner. The special purpose vehicle has been formed with an initial paid up capital of Rupees 10 Crores and authorized capital of Rupees 200 Crores. The SPV shall also own responsibility of discussing the funding pattern for the project with both state and central government and finalizing it thereafter.
+    </p>
+
+    <p class="mt-5">
+
+      The smart city Dholerametro project is expected to be a carrier of 80,000 passengers per hour (40,000 in each direction) and 1.70 million commuters are expected to use by the year 2031.
+
+
+    </p>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+{% endblock content %}

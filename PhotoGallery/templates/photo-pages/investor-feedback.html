@@ -1,0 +1,88 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Feedback | Dholera Metro City
+{% endblock title %}
+
+{% block content %}
+    
+
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'gallery\DMC-Site-Progress\site_progress_hear_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'gallery\DMC-Site-Progress\DMC-5002_site_progress.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+  
+  <div class="mt-5">
+
+    <div class="bg-green-300 py-3 text-center text-black font-semibold text-xl max-sm:text-lg mt-4">
+      <h1>Investor's Feedback</h1>
+    </div>
+  </div>
+
+  <div class="mt-8 flex flex-initial flex-wrap flex-grow items-center justify-center align-middle gap-7">
+
+
+  {% for Jpg_number in JpgRange %}
+
+  <a href="{% static 'gallery/investor-feedback/investorFeedback (' %}{{ Jpg_number }}).jpg" target="_blank">
+      <img style="border: 3px dotted orange; height: 20rem; width: 25rem;" class="rounded-lg" src="{% static 'gallery/investor-feedback/investorFeedback (' %}{{ Jpg_number }}).jpg" alt="Image {{ Jpg_number }}">
+  </a>
+
+  {% endfor %}
+
+  </div>
+
+
+
+  
+<section style="margin-top: 10rem;" class="px-7">
+    <div  class="flex flex-wrap  gap-10 items-center justify-center ">
+  
+      <a class="" href="{%  url 'DholeraSirPages:Dholera-Sir-Work-Progress' %}">
+        <img src="{% static 'gallery\photos\site_progress_tag.jpg' %}" alt="site_progress_tag"> </a>
+  
+      <a href="{% url 'PhotoGallery:DMC-Site-Progress' %}">
+        <img src="{% static 'gallery\photos\site_progress.jpg' %}" alt="site_progress"></a>
+  
+      <a href="{% url 'PhotoGallery:Investor-Visit' %}">
+        <img src="{% static 'gallery\photos\investor-visit-memories.jpg' %}" alt="investor-visit-memories"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-Dholera-Metro-City' %}">
+        <img src="{% static  'gallery\photos\Dholera_Metro_City.jpg' %}" alt="Dholera_Metro_City"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-summit-2017' %}">
+        <img src="{% static 'gallery\photos\summit_2017.jpg' %}" alt="summit_2017"></a>
+  
+      <a href="{% url 'PhotoGallery:photo-gallery-summit-2018' %}">
+        <img src="{% static 'gallery\photos\gpbs-summit.jpg' %}" alt="gpbs-summit"></a>
+  
+  
+  
+  
+    </div>
+  
+  </section>
+  
+
+
+
+{% endblock content %}

@@ -1,0 +1,100 @@
+ 
+
+window.onbeforeunload = function fnUnloadHandler() {
+	var currentURL = window.location.href;
+var pageTitle=document.title;
+	data='get_last_time=leave_page&get_url'+currentURL+'&get_title'+pageTitle;
+	navigator.sendBeacon("https://dholerametrocityoffer.com/CRM_System/Tracker/index1.php",data, false);
+
+};
+
+function getCookie(name) {
+  let cookie = {};
+  document.cookie.split(';').forEach(function(el) {
+    let [k,v] = el.split('=');
+    cookie[k.trim()] = v;
+  })
+  return cookie[name];
+}
+
+var uniq_id= getCookie('dmcty_unique_id');
+var cook_email= getCookie('dhmctyemail');
+var cook_mobile= getCookie('dhmctymno');
+
+$(document).ready(function() {
+
+var currentURL = window.location.href;
+
+var pageTitle=document.title;
+
+ 
+
+$.ajax({
+
+    type: 'POST',
+
+    //url: 'index1.php',
+
+	crossDomain: true,
+
+	dataType: "jsonp",
+
+	url:'https://dholerametrocityoffer.com/CRM_System/Tracker/index1.php',
+
+    data: { 
+
+        'get_url':currentURL,
+		'get_title':pageTitle,
+		'dmcty_unique_id':uniq_id,
+		'dhmctyemail':cook_email,
+		'dhmctymno': cook_mobile
+
+    },
+
+    success: function(msg){
+
+    }
+
+});
+
+});
+
+
+
+$(window).on('beforeunload', function ()
+
+    {
+
+		//alert("Window Unload");
+
+       // return false;
+
+	   
+
+	   $.ajax({
+
+    type: 'POST',
+
+	crossDomain: true,
+
+	dataType: "jsonp",    //url: 'index1.php',
+
+	url:'https://dholerametrocityoffer.com/CRM_System/Tracker/index1.php',
+
+    data: { 
+
+        'get_last_time':'leave_page'
+
+		
+
+    },
+
+    success: function(msg){ 
+
+    }
+
+});
+
+
+
+    });

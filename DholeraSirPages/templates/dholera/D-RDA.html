@@ -1,0 +1,216 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+D-RDA | Dholera Metro City  
+
+{% endblock title %}
+
+{% block content %}
+    
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'dholeraSir-images\DRDA\DRDA_header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'dholeraSir-images\DRDA\DRDA_header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+  <section class="mt-5 px-6 font-semibold text-gray-600 leading-8">
+    <div  class="  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+            DHOLERA - REGIONAL DEVELOPMENT AUTHORITY
+          </h1>
+        </div>
+      </div>
+
+
+      <div class=" mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            The State Government will constitute RDA for each SIR declared by it.
+
+          </h1>
+        </div>
+
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            The RDA will be a body corporate.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            The State Government is also empowered to designate any Government agency or a govt. company to act as RDA.
+
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            The RDA will have Chairman, Vice Chairman, CEO and members not exceeding eleven- to be appointed by the Govt. Dholera Metro CityIt will comprise of the official and non-officials & experts as members.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-blue-900 text-xl  font-bold">
+            Power and functions of D-RDA
+    
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To prepare Land use plan, Town planning scheme and Development plan for SIR.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To Supervise, Monitor, Regulate and Ensure the planned development of SIR.
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To lay down the infrastructure and civil amenities.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Acquire land and hold properties and sale, lease and transfer the properties including land.
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To execute contracts with unit holders, developers.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To levy and collect fees, user charges. Control the development activities.
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            To remove unauthorized construction, encroachment. Basically all ground level work, planning & regulation.
+
+          </h1>
+        </div>
+      </div>
+
+
+  </section>
+
+
+{% endblock content %}

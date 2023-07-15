@@ -1,0 +1,207 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Get Free Offer- Dholera Metro City
+{% endblock title %}
+
+{% block content %}
+
+<div>
+  <div>
+    <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+  </div>
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (window.innerWidth < 700) {
+        image.src = "{% static 'images\Inquiry\contact_header_m.jpg' %}"; // Replace with the path to the new image
+      } else {
+        image.src = "{% static 'images\Inquiry\contact_header.jpg' %}"; // Replace with the original image path
+      }
+    }
+
+    window.addEventListener("load", changeImage);
+    window.addEventListener("resize", changeImage);
+  </script>
+</div>
+
+<section class="mt-5 px-10">
+
+  <div class="">
+
+    <div>
+
+      <h1 class="text-xl font-bold text-blue-900">Regd. Office/Corporate House
+      </h1>
+
+      <p class="mt-3 font-semibold text-gray-600">
+        Plot No-337, Sector-8, Gandhinagar - 382008 <br>
+        Mobile :+91-9978926286 <br>
+        E-Mail : info@dholerametrocity.com, <br>
+        Website : www.dholerametrocity.com <br>
+      </p>
+
+    </div>
+
+    <hr class="border-[1px] mt-4 border-gray-300">
+
+
+    <div class="mt-7">
+
+      <h1 class="text-xl font-bold text-blue-900">Branch office:-
+      </h1>
+
+      <p class="mt-3 font-semibold text-gray-600">
+        Dholera Metro City <br>
+        Plot No. 1081, Sector-8, <br>
+        Gandhinagar-382008 <br>
+      </p>
+
+    </div>
+
+    <hr class="border-[1px] mt-6 border-gray-300">
+
+
+  </div>
+
+
+
+  <div class="mt-6 flex flex-initial items-center justify-center flex-grow flex-wrap gap-8">
+
+
+    <div class="flex flex-col gap-5">
+
+      <div>
+        <img src="{% static 'images\Inquiry\contact_page.jpg' %}" alt="">
+      </div>
+
+      <div class="mt-2 flex flex-row gap-3 items-center">
+        <img class=" " src="{% static 'images\Inquiry\sales-G.jpg' %}" alt="">
+        <p>
+          1. Ms. Mani
+        </p>
+      </div>
+
+      <h1 class="text-gray-500 font-medium">
+        General Manager (Sales) <br>
+        +91-99789 52340 <br>
+        Email:- sales@dholerametrocity.com <br>
+        (New Sales Related Inquiries, Development, Latest News and other kind of Support or queries)
+      </h1>
+
+      <hr class="border-[1px] mt-4 border-gray-300">
+
+
+
+      <div class="mt-2 flex flex-row gap-3 items-center">
+        <img class=" " src="{% static 'images\Inquiry\sales-B.jpg' %}" alt="">
+        <p>
+          2. Mr. Manan Kela
+        </p>
+      </div>
+
+      <h1 class="text-gray-500 font-medium ">
+        General Manager (Marketing) <br>
+        +91-9978944715 <br>
+        Email:-marketing@dholerametrocity.com <br>
+        (New Sales Related Inquiries, Development, Latest News and other kind of Support or queries)
+      </h1>
+
+
+      <hr class="border-[1px] mt-4 border-gray-300">
+
+    </div>
+
+
+
+
+    <div class="md:-mt-10 flex flex-col gap-5">
+
+      <div>
+        <img src="{% static 'images\Inquiry\contact_page_2.jpg' %}" alt="">
+      </div>
+
+      <div class=" flex flex-row gap-3 items-center">
+        <img class=" " src="{% static 'images\Inquiry\sales-G.jpg' %}" alt="">
+        <p>
+          3. Ms. Pooja
+        </p>
+      </div>
+
+      <h1 class="text-gray-500 font-medium ">
+        Business Development Manager (Documentation) <br>
+        +91-9978944716 <br>
+        Email:- dochelp@dholerametrocity.com <br>
+        (For Booking Form, Allotment Letter, Sale Deed Related queries)
+      </h1>
+
+      <hr class="border-[1px] mt-4 border-gray-300">
+
+
+
+      <div class="mt-2 flex flex-row gap-3 items-center">
+        <img class=" " src="{% static 'images\Inquiry\sales-B.jpg' %}" alt="">
+        <p>
+          4. Mr. Mitul Patel
+        </p>
+      </div>
+
+      <h1 class="text-gray-500 font-medium ">
+        Business Development Manager (Account) <br>
+        +91- 9327946916 <br>
+        Email:-paymenthelp@dholerametrocity.com <br>
+        (Payment Receipt, Demand Letter & Pending Payment Related queries)
+      </h1>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="mt-6 text-center text-red-500 border border-blue-900 p-5">
+    <h1>
+      If you have any queries which can not be shorted out or grievances regarding above service please email us on support@dholerametrocity.com
+    </h1>
+  </div>
+
+
+  <div class="mt-4">
+
+    <h1 class="text-xl font-bold text-purple-900 text-center ">
+      Dholera Metro City Team
+    </h1>
+
+    <div class="mt-4 flex justify-center items-center">
+      <img class="rounded-xl border-2 border-orange-800 shadow-xl" src="{% static 'images\Inquiry\team-dholera.jpg' %}" alt="">
+    </div>
+  </div>
+
+
+  <hr class="border-[1px] mt-8 border-gray-300">
+
+
+
+  <div class="mt-6 flex flex-col items-center justify-center gap-5">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7334.145624840502!2d72.64763352442067!3d23.20401693944575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2bd55aaa9b47%3A0x4c59a117fcbd6a08!2sDholera+Metro+City+-+Residential+Plots+at+Dholera+SIR!5e0!3m2!1sen!2sin!4v1551529398822" class="w-[800px] h-[400px] max-sm:w-[299px] max-sm:h-[350px]"></iframe>
+
+    <div class="mt-3" align="center"><a href="https://goo.gl/maps/h6KAoq7Q2tqkx3oo7" target="_blank"><img src="{% static 'images\Lily-DRT\office-direction.jpg' %}" alt="Dholera Metro City" /></a>
+
+
+
+
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15yVL4vBcXoP7b0ktT--vjhQuyvc" class=" mt-3 w-[800px] h-[400px] max-sm:w-[299px] max-sm:h-[350px]"></iframe>
+
+
+
+      
+    </div>
+  </div>
+
+</section>
+
+
+{% endblock content %}

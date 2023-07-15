@@ -1,0 +1,453 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+Running & Completed Projects | Dholera Metro City
+
+{% endblock title %}
+
+
+{% block content %}
+    
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'dholeraSir-images\R-C-Projects\Dholera_SIR_Header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'dholeraSir-images\R-C-Projects\Dholera_SIR_Header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+  <section class="mt-5 px-9">
+
+
+    <div class="flex flex-col gap-7">
+
+
+      <div style="border: 2px dotted orange;" class="rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\dholera-abcd-building-1.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Design & Construction of ABCD Building</h1>
+
+          <p class="mt-3">The Contractor scope includes Design, Procurement, Construction, Installation, Testing and Commissioning of ABCD Building in Dholera.</p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s Cube Construction & Engineering Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span> 72.31
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Completed
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Raw-Water-Transmission-dholera-sir-2.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Raw Water Transmission Main (RWTM – 10 MLD)</h1>
+
+          <p class="mt-3">The Contractor scope includes Design, Procurement, Construction, Installation, Testing, Commissioning, Trial Run of 3 months and 5 year O & M of 10 MLD Raw water pumping station and Raw Water Transmission Main from Pipli Pumping Station (Pariyej Reservoir) to Water Treatment Plant at TP1 in Dholera SIR.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s D. R. Agarwal Infra Pvt Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>  29.67
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Completed
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Adhiya-River-Bunding-1-3.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Adhiya River Bunding Phase-1</h1>
+
+          <p class="mt-3">Phase-I works of Flood Protection of Adhiya River between SH-06 and Khun village
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s Jugalkishore Ramkishan Agrawal Pvt Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span> 11.87
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Completed
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Interior-Works-of-BEC-Building-1-4.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Interior Works of BEC Building</h1>
+
+          <p class="mt-3">Interior Works of Business and Exhibition Centre (BEC) building in ABCD Complex in DSIR
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>New Concept
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span> 19.44
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Completed
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Experience-Zone-at-ABCD-Building-1-5.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Experience Zone at ABCD Building</h1>
+
+          <p class="mt-3">The project vision is to create a state-of-the-art “Experience Zone” with Physical Model, Projection Mapping and display of the content on the digital wall. This Experience zone is located on the Ground floor of the BEC (Business and Experience Centre) Building at DSIR, Dholera, Gujarat.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>Tagbin
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>4.84
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Completed
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Design-Construction-of-Roads-Services-1-6.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Design & Construction of Roads & Services</h1>
+
+          <p class="mt-3">The scope of work includes design and construction of the project roads and utilities/services like road network; Potable water supply network; Recycled water supply network; Sewage network; Industrial Effluent collection network; Storm water drainage network; RCC ducts for ICT network, Power supply network and crossings at junctions; Bridges and Outfall structures; Plot level Roads and Visual Branding elements etc.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s Larsen & Toubro Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>1801.07
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Canal-Front-Development-Zone-1-7.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Canal Front Development Zone</h1>
+
+          <p class="mt-3">Construction of Canal Front Development including Land Filling, Civil, MEP and in Dholera Special Investment Region, Dholera
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s P.R.Patel & Company
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>41.42
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Service-Area-Buildings-dholera-sir-1-8.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Service Area Buildings (with Porta Cabins)</h1>
+
+          <p class="mt-3">Design, Procurement and Construction of 17 nos. of Service Area (With Porta Cabin), Operation and Maintenance of the project in conformity with the specifications & standards.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s Bridge & Roof Co. India Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>32.82
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Common-Effluent-Treatment-Plant-dholera-sir-1-9.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Common Effluent Treatment Plant (CETP – 20 MLD)</h1>
+
+          <p class="mt-3">The Contractor scope includes Design, Procurement, Construction, Installation, Testing, Commissioning, Trial Run of 3 months and 5 year O & M of 14 IntermediateEffluent Pumping stations , 1 Terminal Pumping station , 20 MLD Common Effluent Treatment Plant , RO reject disposal pipeline (12 MLD) from the RO reject tank to the outfall at Sukhbhadar creek, Master Balancing Reservoir- Recycled water (20 ML) & Pumping station for Recycled water (80 MLD)
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s Larsen & Toubro Ltd
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>156.86
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Sewage-Treatment-Plant-dholera-sir-10.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Sewage Treatment Plant (STP – 10 MLD)</h1>
+
+          <p class="mt-3">The Contractor scope includes Design, Procurement, Construction, Installation, Testing, Commissioning, Trial Run of 3 months & 5 year O&M of 6 Intermediate Sewage Pumping Stations , 1 Terminal Pumping station , 10 MLD Sewage Treatment Plant , 7.5 ML Master Balancing Reservoir and 70 MLD Pumping Station.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span> M/s Larsen & Toubro Ltd,
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>53.13
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Balance-Work-of-WTP-dholera-sir-11.png' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Balance Works of WTP (WTP – 50 MLD)</h1>
+
+          <p class="mt-3">The Contractor scope includes review of designs already done and updation (if required), carry out all balance designs, Procurement, Construction, Installation, Testing, Commissioning, Trial Run of 2 months, 5 year O&M of 50 MLD Water Treatment Plant , Clear Water Reservoir (16.7 ML) , Clear Water Pumping Station (150 MLD), Potable Water Transmission Main (121.5 MLD) ,Master Balancing Reservoir (10 ML) & Potable water Pumping station (25.5 MLD).
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span> MS Khurana Engineering Ltd,
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>87.97
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Earth-filling-in-Selected-Plots-of-Activation-Area-dholera-sir-12.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Earth filling in Selected Plots of Activation Area</h1>
+
+          <p class="mt-3">Filling of Soil in Plot-A (70 Ha) and Plot-B (92 Ha) with average soil filling depth of 2.0m. The Scope of work pertain to clearing and grubbing of the project site of Plot A & B, Removal of unsuitable material from the project site and soil filling in the project site.
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span> M/s Montecarlo Ltd,   
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>86.01
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\ICT-MSI-Project-dholera-sir-13.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">ICT MSI Project</h1>
+
+          <p class="mt-3">Design, Supply, Install, Test, Integrate, Commissioning, Operation & Maintenance of ICT Components in Cluster A1 of Activation Area at Dholera.
+
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>M/s D. R. Agarwal Infra Pvt Ltd,  
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>68.99
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div style="border: 2px dotted orange;" class="mt-5 rounded-lg p-2">
+
+        <img style="height: 11rem;" class="float-left m-[10px] border-2 border-green-700 shadow-xl rounded-lg" src="{% static 'dholeraSir-images\R-C-Projects\Interior-Works-of-SPV-Building-dholera-sir-14.jpg' %}" alt="">
+
+        <div class="pt-2 font-semibold">
+          <h1 class="text-lg font-bold text-blue-900">Interior Works of SPV Building</h1>
+
+          <p class="mt-3">Interior Works of Special Purpose Vehicle(SPV) building at ABCD Complex in DSIR
+
+          </p>
+
+          <p class="mt-3">
+            <span class="text-red-600">Contractor : </span>New Concept,     
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Contract Value (INR Crores) : </span>15.58
+          </p>
+          
+          <p class="mt-1">
+            <span class="text-red-600">Status: </span> Ongoing
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+{% endblock content %}

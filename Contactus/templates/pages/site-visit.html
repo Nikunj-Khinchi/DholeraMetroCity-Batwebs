@@ -1,0 +1,146 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+  
+Free Site Visit Inquiry- Dholera Metro City
+{% endblock title %}
+
+
+{% block content %}
+
+
+<div>
+  <div>
+    <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+  </div>
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (window.innerWidth < 700) {
+        image.src = "{% static 'images\site-visit\sitevisit_header_m.jpg' %}"; // Replace with the path to the new image
+      } else {
+        image.src = "{% static 'images\site-visit\sitevisit_header.jpg' %}"; // Replace with the original image path
+      }
+    }
+
+    window.addEventListener("load", changeImage);
+    window.addEventListener("resize", changeImage);
+  </script>
+</div>
+
+
+<section class="mt-4 px-10">
+
+  <div class="text-center">
+
+    <h1 class="text-xl font-bold text-blue-900">Regd. Office/Corporate House
+    </h1>
+
+    <p class="mt-3 font-semibold text-gray-600">
+      Plot No-337, Sector-8, Gandhinagar - 382008 <br>
+      Mobile :+91-9978926286 <br>
+      E-Mail : info@dholerametrocity.com, <br>
+      Website : www.dholerametrocity.com <br>
+    </p>
+
+  </div>
+
+
+  <div class="mt-10 flex flex-col items-center justify-center gap-5">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7334.145624840502!2d72.64763352442067!3d23.20401693944575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2bd55aaa9b47%3A0x4c59a117fcbd6a08!2sDholera+Metro+City+-+Residential+Plots+at+Dholera+SIR!5e0!3m2!1sen!2sin!4v1551529398822" class="w-[800px] h-[400px] max-sm:w-[299px] max-sm:h-[350px]"></iframe>
+
+    <div class="mt-3" align="center"><a href="https://goo.gl/maps/h6KAoq7Q2tqkx3oo7" target="_blank"><img src="{% static 'images\Lily-DRT\office-direction.jpg' %}" alt="Dholera Metro City" /></a>
+
+
+
+
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15yVL4vBcXoP7b0ktT--vjhQuyvc" class=" mt-3 w-[800px] h-[400px] max-sm:w-[299px] max-sm:h-[350px]"></iframe>
+
+
+
+
+    </div>
+  </div>
+
+
+  <div class="mt-8">
+
+    <div>
+      <h1 class="text-2xl text-blue-900 font-bold">&RightArrow; Everyday Site Visits Schedule
+      </h1>
+
+      <div  class="mt-6 text-blue-900 font-semibold flex flex-col gap-10 ">
+
+        <style>
+          table td{
+            border: 1px solid;
+            padding: 5px;
+            text-align: center;
+          }
+        </style>
+
+        <table width="100%" border="1" align="center" cellpadding="10" cellspacing="5">
+
+          <tr class="text-white text-center">
+            <td bgcolor="#006699"><span class="style4">Time</span></td>
+            <td bgcolor="#006699"><span class="style4">Venue</span></td>
+          </tr>
+
+          <tr>
+            <td>10.30 AM&nbsp;</td>
+            <td>Office Visit for Presentation at Gandhinagar</td>
+          </tr>
+          <tr>
+            <td>12.00 AM</td>
+            <td>Departure for Site Visit to Dholera</td>
+          </tr>
+          <tr>
+            <td>02:00 PM</td>
+            <td>Lunch at Gallops Hotel Fedra</td>
+          </tr>
+          <tr>
+            <td>02.30 PM</td>
+            <td>Reached to Dholera Metro City</td>
+          </tr>
+          <tr>
+            <td>03.30 PM</td>
+            <td>Return to Ahmedabad</td>
+          </tr>
+          <tr>
+            <td>06.00 PM</td>
+            <td>Reached to Ahmedabad</td>
+          </tr>
+        </table>
+
+
+        <table width="100%" border="1" align="center" cellpadding="5" cellspacing="5">
+          <col width="64" />
+          <col width="441" />
+          <tr class="text-white text-center" bgcolor="#006699" height="21">
+            <td height="21" colspan="2">
+              <div align="center"><span class="style7 style5">Note</span></div>
+            </td>
+
+          </tr>
+          <tr height="20">
+            <td width="41" height="20">1</td>
+            <td width="945">Site Visits are Scheduled for Everyday</td>
+          </tr>
+          <tr height="21">
+            <td height="21">2</td>
+            <td>Kindly confirm your Site Visit before 24 hours on Cell no. 9978944715</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock content %}

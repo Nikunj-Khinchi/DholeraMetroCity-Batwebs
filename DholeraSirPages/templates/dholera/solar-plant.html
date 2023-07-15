@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+Solar Planet | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-36" src="" alt="">
+    </div>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById("myImage");
+            if (window.innerWidth < 700) {
+              image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\Solar\Dholera-Solar-Power-Plant-header-m.jpg' %}"; // Replace with the path to the new image
+            } else {
+              image.src = "{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\Solar\Dholera-Solar-Power-Plant-header.jpg' %}"; // Replace with the original image path
+            }
+          }
+      
+          window.addEventListener("load", changeImage);
+          window.addEventListener("resize", changeImage);
+        </script>
+    </script>
+  </div>
+
+
+  <div class="mt-10">
+
+    <div class="bg-green-300 py-3 text-center text-black font-semibold text-xl">
+        <h1>Dholera Solar Power Plant</h1>
+      </div>
+  </div>
+
+  <div class="mt-8 px-10">
+
+    <div class=" float-left m-[10px]">
+          <img class=" shadow-xl rounded-lg" src="{% static 'dholeraSir-images\DholeraSir-projects\dholera-international-airport\Solar\solar-park-CRZ-dholera.jpg' %}" alt="">
+        </div>
+
+        <div style="letter-spacing: 0.4px;" class="font-semibold text-gray-600 text-base py-5 leading-6 ">
+            <p>
+                Gujarat is one of the most potential areas in terms of its huge solar generation capacity. It is once again set in motion with the implementation of probably the world’s largest solar plant.
+            </p>
+
+            <p class="mt-5">
+                Around 80km from Ahmedabad, Gujarat aims to establish India’s largest 5,000MV solar park at Dholera SIR in DMIC corridor[Special Investment Region].The State Government has given its acceptanceto the most promising project which will be located on 11,000 hectares of land along the Gulf of Khambhat in the DSIR. The land used for this solar plant will be of CRZ type 1[B], suitable for renewable energy generation. So, there will be no need for purchasing special land.
+            </p>
+
+            <p class="mt-5">
+                With an investment of 25,000 crore, this solar park will create employment opportunities for over 20,000 people. The companies that will implement the project include Gujrat Power Corporation limited[GPCL], Gujrat Urja Nigam Limited[GUNL] and Gujrat Electric Transmission Corporation[GETCO] along with the Solar Energy Corporation of India[SECI] and the Central Transmission Unit[CTU].
+            </p>
+  
+            <p class="mt-5 text-lg ">
+                Smart City In Dholera
+            </p>
+
+
+            <p class="mt-5">
+                The Dholera Solar Plant has several obstructions coming its way related to saltiness condition, strong acid nature of air, regular and neat cleaning of solar panels and more speculation in foundation work which will also add on to the cost. Still the advantages are much more than the disadvantages.
+            </p>
+
+            <p class="mt-5">
+                Solar power plants require huge land and a barren land is available with the government in Dholera. The transmission cost will be minimized as Dholera Solar Power Plant will have generation and load in the same area. This project shall attract a number of construction units that will create a large number of job openings in Dholera and its surrounding areas. A large number of firms involved in heavy engineering and manufacturing of solar plants have shown great interest to establish their units in Dholera ever since the announcement for setting up Dholera Power Plant has been authenticated.
+
+            </p>
+
+            <p class="mt-5">
+                To conclude, the ultimate target of Dholera Solar Power Plant is to give the residents a place worth to live. It also wants to protect the environment, take care of natural resources, lower harmful discharge, utilization of resources to the maximum so that the residents can have a safe and healthy life.
+            </p>
+
+            
+
+
+        </div>
+
+  </div>
+  
+
+
+    
+{% endblock content %}

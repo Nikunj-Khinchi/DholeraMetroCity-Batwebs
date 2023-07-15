@@ -1,0 +1,141 @@
+
+
+window.onload  = function fnloadHandler() {
+
+	var currentURL = window.location.href;
+
+	var pageTitle=document.title;
+
+	data='get_url'+currentURL+'&get_title'+pageTitle;
+
+	navigator.sendBeacon("https://dholerametrocityoffer.com/CRM_System/Tracker/index1.php",data, false);
+
+
+};
+
+var currentURL = window.location.href;
+
+
+
+var pageTitle=document.title;
+
+
+
+var closing = true;
+
+
+
+$.ajaxSetup ({
+
+
+
+cache: false
+
+
+
+});
+
+
+
+$(function () {
+
+
+
+$("a,input[type=submit]").click(function () { closing = false; });
+
+
+
+$(window).unload(function () {
+
+
+
+                if (closing) {
+
+
+
+                    jQuery.ajax({ 
+
+
+
+								crossDomain: true,
+
+								dataType: "jasonp",
+
+								withCredentials:true,
+
+						url:'https://dholerametrocityoffer.com/CRM_System/Tracker/insert.php',
+
+								async: false,
+
+
+
+				data:{'get_last_time':'Yes','get_url':currentURL,'get_title':pageTitle},
+
+
+
+								});
+
+
+
+                }
+
+
+
+			else
+
+
+
+				{
+
+
+
+				             
+
+
+
+                    jQuery.ajax({ 
+
+
+
+								contentType: "application/json; charset=utf-8",
+
+
+
+								crossDomain: true,
+
+
+
+								dataType: "jasonp",
+
+								withCredentials:true,
+
+
+
+						url:'https://dholerametrocityoffer.com/CRM_System/Tracker/insert.php',
+
+
+
+								async: false,
+
+
+
+				data:{'get_last_time':'Yes','get_url':currentURL,'get_title':pageTitle},
+
+
+
+								});
+
+				}
+
+
+
+           });
+
+
+
+});
+
+
+
+
+

@@ -1,0 +1,80 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+
+Projects | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+    
+
+<div>
+    <div>
+      <img id="myImage" class="w-full " src="" alt="">
+    </div>
+
+    <script>
+      function changeImage() {
+          var image = document.getElementById("myImage");
+          if (window.innerWidth < 700) {
+            image.src = "{% static 'dholeraSir-images\DholeraSir-projects\Dholera_SIR_Header_m.jpg' %}"; // Replace with the path to the new image
+          } else {
+            image.src = "{% static 'dholeraSir-images\Dholera_SIR_Header.jpg' %}"; // Replace with the original image path
+          }
+        }
+    
+        window.addEventListener("load", changeImage);
+        window.addEventListener("resize", changeImage);
+      </script>
+  </div>
+
+
+  <div class="mt-10 px-16">
+
+    <div class="flex items-center justify-center flex-grow gap-20 flex-initial flex-wrap">
+
+        <div>
+           
+            <img class=" shadow-2xl" src="{% static 'dholeraSir-images\DholeraSir-projects\projects\abcd-building-dholera-sir.jpg' %}" alt="">
+          
+          </div>
+
+          <div>
+            <a href="{% url 'DholeraSirPages:Dholera-International-Airport'  %}">
+            <img class=" shadow-2xl" src="{% static 'dholeraSir-images\DholeraSir-projects\projects\dholera-international-airport.jpg' %}" alt="">
+          </a>
+          </div>
+
+
+          <div>
+            <a href="{% url 'DholeraSirPages:Dholera-solar-power-plant' %}">
+            <img class=" shadow-2xl" src="{% static 'dholeraSir-images\DholeraSir-projects\projects\solar-park-dholera-sir.jpg' %}" alt="">
+          </a>
+          </div>
+
+          <div>
+            <a href="{% url 'DholeraSirPages:Dholera-metro-rail-project' %}">
+            <img class=" shadow-2xl" src="{% static 'dholeraSir-images\DholeraSir-projects\projects\dholera-metro-train.jpg' %}" alt="">
+          </a>
+          </div>
+
+          <div>
+            <a href="{% url 'DholeraSirPages:ahmedabad-dholera-six-lane-expressway' %}">
+            <img class=" shadow-2xl" src="{% static 'dholeraSir-images\DholeraSir-projects\projects\express-way-dholera-sir.jpg' %}" alt="">
+          </a>
+          </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+{% endblock content %}
+
+

@@ -1,0 +1,731 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+Special Investment Region | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+
+<div>
+  <div>
+    <img id="myImage" class="w-full " src="" alt="">
+  </div>
+
+  <script>
+    function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'dholeraSir-images\DholeraSir-projects\Dholera_SIR_Header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'dholeraSir-images\Dholera_SIR_Header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+
+
+</div>
+
+<main class="mt-10 ">
+<style>
+
+  .nav-box{
+    background-color: rgb(108, 0, 108);
+  }
+  .nav-box:hover{
+    background-color: rgb(28, 28, 134);
+  }
+</style>
+ 
+
+  <section class="mt-4 px-12">
+    <div class="text-center text-sm font-bold text-white grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-2 gap-5 justify-center items-center">
+      <div class="nav-box rounded-xl ">
+
+      <a href="#overview">  <button  class="   p-4">Dholera Sir -Overview</button></a>
+      </div>
+
+      <div class="nav-box  rounded-xl ">
+
+      <a href="#vision"> <button class="     p-4">Project Vision</button></a> 
+      </div>
+
+
+      <div class="nav-box  rounded-xl ">
+
+        <button class="    p-4">Project Highlights & Opportunities</button>
+      </div>
+
+      <div class="nav-box  rounded-xl ">
+        <button class="    p-4">Current Status</button>
+
+      </div>
+
+      <div class="nav-box rounded-xl ">
+        <button class="      p-4">Photo & Videos</button>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- section 2 -->
+  <section class="px-4">
+
+    <div class="mt-10">
+      <div class="text-2xl max-sm:text-xl font-bold text-blue-900">
+        <h1>Dholera SIR: The India's First Planned Greenfield City</h1>
+      </div>
+
+
+
+      <div  id="overview" class="mt-10  flex flex-row  gap-3">
+        <div class="">
+          <img style="width: 2.8rem; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+        </div>
+        <div>
+
+          <h1 class="text-2xl font-bold text-violet-900">
+            Dholera Sir - Overview
+          </h1>
+          <p class="text-red-500 mt-3 font-bold">Dholera SIR : Ideally located, widely connected...</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="mt-5">
+
+      <div class="max-md:flex max-md:flex-col">
+
+        <!--  -->
+        <div class="flex flex-col gap-10 items-center justify-center float-right m-[10px]">
+          <iframe class="md:h-[316px] md:w-[560px] max-sm:h-[200px] max-sm:w-[300px] border-2 shadow-lg rounded-2xl " src="https://www.youtube.com/embed/Lj8EmFZRoMs?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          <div class="float-right">
+            <img class="border-2 border-black shadow-xl rounded-2xl" src="{% static 'dholeraSir-images\Dholera_SIR_2.jpg' %}" alt="">
+          </div>
+        </div>
+
+
+        <div class=" flex flex-col md:gap-4">
+
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Total Area : 800 sq. kms: a green field location</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Developable area: 500 sq. kms.</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Economic activity area : 360 sq. kms</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">World-class infrastructure & connectivity: within & outside</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Central spine express way & Metro Rail to link the SIR with mega cities</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Airport & Sea Port in the vicinity</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Proximity to mega cities: Ahmedabad, Bhavnagar, Vadodara</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Benefit of sea coast, nature park, golf course</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Premium civic amenities</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Capable to cater to both International & Domestic Market</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Close to Gujarat International Finance TechCity (GIFT)</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Close to Petro-chemicals and Petroleum Inv. Region (PCPIR)</p>
+          </div>
+
+
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Logistic support of the Dedicated Freight Corridor (DMIC)</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Benefits of the high impact <span class="text-blue-800"> Delhi Mumbai Industrial Corridor (DMIC)</span></p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Public investment in core infrastructure</p>
+          </div>
+
+
+
+        </div>
+
+
+
+        <!--  -->
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- 
+      Silent Features-Dholera SIR
+     -->
+
+
+    <div class="max-sm:mt-10 mt-20  flex flex-row  gap-3">
+      <div class="w-auto">
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+      </div>
+      <div>
+
+        <h1 class="text-2xl max-sm:text-xl font-bold text-violet-900">
+          Silent Features-Dholera SIR
+
+        </h1>
+        <p class="text-red-500 mt-3 font-bold">Dholera SIR : A Self governed global centre of economic activities...</p>
+      </div>
+    </div>
+
+
+    <div class="mt-5">
+
+      <div class="max-md:flex max-md:flex-col">
+
+        <!--  -->
+        <div class=" float-right m-[10px]">
+          <div class="float-right">
+            <img class="border-2 border-black shadow-xl rounded-2xl" src="{% static 'dholeraSir-images\Dholera_SIR_3.jpg' %}" alt="">
+          </div>
+
+        </div>
+
+
+        <div class=" flex flex-col md:gap-4">
+
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Empowered mechanism for administration</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Autonomy in operaions</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Flexibility in decisions</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Freedom in planning</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Commitment to adopt best practices</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Full potential for private sector participation</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">Fully developed environment & framework for PPP</p>
+          </div>
+
+          <div class="mt-5 flex flex-row gap-2 items-center">
+            <img style="height: 1.2rem; margin-top: 3px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-600">PSP modes : BOT, BOOT etc already operational</p>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <!--  -->
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <!-- PROJECT VISION-DHOLERA SIR -->
+
+
+
+
+    <div id="vision" class="max-sm:mt-10 mt-20 items-center  flex flex-row  gap-3">
+      <div class="w-auto">
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+      </div>
+      <div>
+
+        <h1 class="text-2xl max-sm:text-xl font-bold text-violet-900">
+          PROJECT VISION-DHOLERA SIR
+
+        </h1>
+      </div>
+    </div>
+
+    <div >
+      <div class="float-left m-[10px] ">
+        <img class="border-2 border-black shadow-xl rounded-xl" src="{% static 'dholeraSir-images\DMIC4.jpg' %}" alt="">
+      </div>
+      <div style="letter-spacing: 0.8px;" class="pt-2 leading-9  text-base font-bold text-gray-500">
+        <p >To develop Dholera Special Investment Region (SIR) as global manufacturing and trading hub i.e. "The engine for economic resurgence of the country" which is supported by world class infrastructure.</p>
+        <p class="mt-7">
+          "The Development Plan, taking into account the DMIC objectivs and goals, should focus towards creating and enabling environment to protect local industries, enhance investment climate, improve quality of life, upgrade human skills, create world class infrastucture and attract global investment".</p>
+          <p class="mt-7">Project goals are to double the employement potential, triple industrial output and quadruple exports from the region in next five years.</p>
+      </div>
+    </div>
+
+
+
+    <!-- Dholera Metro City
+Location Profile-Dholera SIR  -->
+    <div class="max-sm:mt-10 mt-20 items-center  flex flex-row  gap-3">
+      <div class="w-auto">
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+      </div>
+      <div>
+
+        <h1 class="text-2xl max-sm:text-xl font-bold text-violet-900">
+         
+          Location Profile-Dholera SIR
+
+        </h1>
+      </div>
+    </div>
+
+    <div>
+      <div class="float-left m-[10px] ">
+        <img class="border-2 border-black shadow-xl rounded-xl max-md:h-[35rem] h-[60rem] " src="{% static 'dholeraSir-images\Location.jpg' %}" alt="">
+      </div>
+
+      <div style="letter-spacing: 0.8px;" class=" leading-9  text-base font-bold text-gray-500">
+        <p>
+          DHOLERA is situated in Ahmedabad district in the Gulf of Khambhat 
+        </p>
+
+        <p class="mt-4">
+          Identified as a Greenfield port, it will be developed along with private sector participation by Dholera Port Limited (promoted by J K Group and Adani Group). </p>
+
+        <p class="mt-4">
+          Dholera is in proximity with the coastal line. It is covered by water faces on three sides, namely, on the east face by Gulf of Khambhat, on the north side by Bavaliari creek and on southern side by Sonaria creek. </p>
+
+        <p class="mt-4">
+          To develop <span class="text-blue-800"> Dholera Special Investment Region (SIR) </span>as global manufacturing and trading hub i.e. "The engine for economic resurgence of the country" which is supported by world class infrastructure.
+          </p>
+
+        <p class="mt-4">
+          Proximity to Ahmedabad has provided Dholera a strong locational advantage with a vibrant manufacturing base and investment scenario.</p>
+
+        <p class="mt-4">The project is spread over an area of 35,000 hectares. The processing area which is proposed is 14,000 hectares and rest is non- processing zone.</p>
+
+        <p class="mt-4">Dholera port is primarily involved into handling general cargo, dry bulk, containers, ship breaking and chemical handling facilities. </p>
+
+
+        <h1 class="mt-4 text-red-600 font-semibold">Location: Dholera Special Investment Region</h1>
+
+
+  <div class="mt-4 flex flex-row gap-2">
+    <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    <p class=" font-bold text-gray-500">Strategically located, the Ahmedabad-Dholera industrial region lies within 100 km from the Dedicated Freight Corridor (DFC) in Southern Gujarat.</p>
+  </div>
+
+
+        <div class="mt-9">
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.8rem; margin-top: 0px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-blue-900 text-xl">
+              Connectivity
+              </p>
+          </div>
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-500">National Highway 8 connects the Dholera Special Investment Region with Ahmedabad, Bhavnagar and Mumbai. Dholera itself has good connectivity with National Highway (NH) 8 (Anand) and 8A (Bagodra), augmenting Bagodra -Bhavnagar, Bagodra- Surendranagar- Radhanpur links. </p>
+          </div>
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-500">As a part of Golden Quadrilateral, the 500 km Mumbai- Ahmedabad- Vadodara Express way connects the region. </p>
+          </div>
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-500">In order to make the region more assessable, an airport and a port are proposed in this region.
+            </p>
+          </div>
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-500">The port site is proposed to be connected by road with Ahmedabad – Bhavnagar highway at a distance of about 11 kilometres. Almost 2,057 hectares of Government land was allocated for the development of port.  </p>
+          </div>
+
+          <div class="mt-4 flex flex-row gap-2">
+            <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+            <p class=" font-bold text-gray-500">site Rail connection is being planned for Dholera, while the nearest meter gauge connection is Bhavnagar (34 km) and the nearest broad gauge station is Tarapur (103 km).
+            </p>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+    <!-- 
+
+     -->
+
+
+     <div class="mt-10 md:px-14">
+
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-8">
+        <div>
+          <img class="md:h-[45rem] border-[3px] shadow-xl rounded-xl border-purple-900" src="{% static 'dholeraSir-images\Road_Connectivity_dholera_SIR.jpg'  %}" alt="">
+        </div> 
+
+        <div>
+          <img class="md:h-[45rem] border-[3px] shadow-xl rounded-xl border-purple-900" src="{% static 'dholeraSir-images\Air_Connectivity_dholera_SIR.jpg' %}" alt="">
+        </div>
+
+        <div>
+          <img class="md:h-[45rem] border-[3px] shadow-xl rounded-xl border-purple-900" src="{% static 'dholeraSir-images\Rail_Connectivity_Dholera_SIR.jpg' %}" alt="">
+        </div>
+
+        <div>
+          <img class="md:h-[45rem] border-[3px] shadow-xl rounded-xl border-purple-900" src="{% static 'dholeraSir-images\Sea_Connectivity_Dholera_SIR.jpg' %}" alt="">
+        </div>
+      </div>
+
+     </div>
+
+
+     <!-- Project Highlights & Opportunities-Dholera SIR -->
+
+     <div class="max-sm:mt-10 mt-20 items-center  flex flex-row  gap-3">
+      <div class="w-auto">
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+      </div>
+      <div>
+
+        <h1 class="text-2xl max-sm:text-xl font-bold text-violet-900">
+         
+          Project Highlights & Opportunities-Dholera SIRs
+
+        </h1>
+      </div>
+    </div>
+
+    <div class="mt-5 max-md:flex max-md:flex-col">
+      <div class="float-left m-[10px] ">
+        <img class="border-2 border-black shadow-xl rounded-xl " src="{% static 'dholeraSir-images\Dholera_SIR_Projects.jpg' %}" alt="">
+      </div>
+
+
+      <div style="letter-spacing: 0.8px;" class="md:pt-10 leading-9  text-base font-bold text-gray-500">
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">
+             Self governed economic region enjoying full support of the government and full potential for private sector participation.
+            </p>
+        </div>
+
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">
+            Logistic support of the Delhi-Mumbai Dedicated Freight Corridor linked with efficient rail and road network.
+            </p>
+        </div>
+
+
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">To be linked with Ahmedabad city with metro rail system.</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">Proximity to sea port, Closeness to international airport.</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500"> Premium civic amenities.</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">Close to Gujarat International Finance City (GIFT).</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500"> Close to Petro-chemicals and Petroleum Inv. Region (PCPIR).</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">Dholera Metro City Autonomy in operations.</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">Single window clearance.</p>
+        </div>
+
+        <div class="mt-4 flex flex-row gap-2">
+          <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+          <p class=" font-bold text-gray-500">Dispute Resolution mechanism.</p>
+        </div>
+
+     
+
+
+        
+        </div>
+
+
+    </div>
+
+
+    <div class="md:mt-24 mt-10">
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.8rem; margin-top: 0px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-blue-900 text-xl">
+          Opportunities at Dholera SIR in DMIC corridor
+          </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">To build the industrial parks, townships, knowledge cities </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">In building its infrastructure: road, rail, hospital, water, sanitation, tourism, and hospitality </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Set up the metro rail system & <span class="text-blue-900"> Dholera international airport</span>
+        </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Potential for development as a multi-modal transportation hub due to lesser distance to all the northern Indian States. </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Build world class transport service foreign markets
+        </p>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="mt-20">
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.8rem; margin-top: 0px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-blue-900 text-xl">
+          CURRENT STATUS-DHOLERA SIR
+          </p>
+      </div>
+
+
+      <div class="max-md:flex max-md:flex-col">
+
+     
+
+      <div class="float-left m-[10px] ">
+        <img class="border-2 border-black shadow-xl rounded-xl w-[40rem]" src="{% static 'dholeraSir-images\master_plan_Dholera-SIR.jpg' %}" alt="">
+      </div>
+
+      <div style="letter-spacing: 0.8px;" class=" leading-9  text-base font-bold text-gray-500">
+
+     
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Pre-feasibility study completed by M/s Feed Back Ventures </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Location identified along with details of the area </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">The work on the central spine road already started  </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Notification issued for delineation of 879 Sq. Km of Area as DSIR </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Government allocates 1700 Hect. land for adjoining Airport </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Anchor Tenants already in place  </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500"> Master planning underway by M/s Halcrow, UK </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Water logging, seismological & environment studies underway  </p>
+      </div>
+
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">The legal framework enacted: The SIR Act 2009  </p>
+      </div>
+
+      <div class="mt-4 flex flex-row gap-2">
+        <img style="height: 1.2rem; margin-top: 10px;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+        <p class=" font-bold text-gray-500">Project development corporation (GICC) formed   </p>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  </section>
+
+  
+  <hr class="mt-8 border-t-2 border-solid border-t-blue-900 ">
+
+
+  <section class="mt-10 ">
+     
+    <div class="flex flex-grow justify-center  flex-wrap  gap-[3.5rem]">
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">DMIC PROJECTS</h1>
+        <p class="mt-5 text-base font-semibold">Delhi Mumbai Industrial Corridor</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">DFC PROJECTS</h1>
+        <p class="mt-5 text-base  font-semibold">Dedicated Freight Corridor</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">GIDB</h1>
+        <p class="mt-5 text-base  font-semibold">Gujarat infrastructure Development Board</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">D-RDA</h1>
+        <p class="mt-5  text-base font-semibold">Dholera - Regional Development Authority</p>
+      </div>
+
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">Dholera Sir</h1>
+        <p class="mt-5 text-base  font-semibold">Special Investment Region</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">Early Bird Projects</h1>
+      </div>
+
+      
+    </div>
+  </section>
+
+</main>
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+  News papers | Dholera Metro City
+{% endblock title %}
+
+
+{% block content %}
+    
+
+    
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'news-images\news-papers\news_paper_header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'news-images\news-papers\news_paper_header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+
+  <section class="mt-8 px-5">
+
+    <div class="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5">
+
+        {% for image_number in image_range %}
+        <a href="{% static 'news-images\news-papers\NewsPaper-' %}{{ image_number }}.jpg" target="_blank">
+            <div class="flex justify-center items-center align-middle">
+
+                <img  style="border: 2px solid rgb(255, 179, 39); height: 150px; width: 90%;" class="rounded-lg shadow-xl  m-[14px] " src="{% static 'news-images\thumb\t-' %}{{ image_number }}.jpg" alt="Image {{ image_number }}">
+            </div>
+        </a>
+        <!-- Dholera_MetroCity\NewsApps\static\news-images\thumb\1.jpg -->
+        {% endfor %}
+
+    </div>
+
+  </section>
+
+
+
+{% endblock content %}

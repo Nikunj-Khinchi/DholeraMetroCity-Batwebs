@@ -1,0 +1,674 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+
+DMIC | Dholera Metro City
+
+{% endblock title %}
+
+
+{% block content %}
+
+
+<div>
+  <div>
+    <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+  </div>
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (window.innerWidth < 700) {
+        image.src = "{% static 'dholeraSir-images\DMIC\DMIC_header_m.jpg' %}"; // Replace with the path to the new image
+      } else {
+        image.src = "{% static 'dholeraSir-images\DMIC\DMIC_header.jpg' %}"; // Replace with the original image path
+      }
+    }
+
+    window.addEventListener("load", changeImage);
+    window.addEventListener("resize", changeImage);
+  </script>
+</div>
+
+
+<section class="mt-4 px-9">
+
+  <style>
+    .nav-box {
+      background-color: rgb(108, 0, 108);
+    }
+
+    .nav-box:hover {
+      background-color: rgb(28, 28, 134);
+    }
+  </style>
+
+  <div class="text-center text-sm font-bold text-white grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-2 gap-5 justify-center items-center">
+    <div class="nav-box rounded-xl ">
+
+      <a href="#Vision"> <button class="   p-4">Vision for DMIC</button></a>
+    </div>
+
+    <div class="nav-box  rounded-xl ">
+
+      <a href="#Goals"> <button class="     p-4">Project Goals - DMIC </button></a>
+    </div>
+
+
+    <div class="nav-box  rounded-xl ">
+
+      <a href="#implementation"> <button class="    p-4">Project implementation - DMIC</button></a>
+    </div>
+
+    <div class="nav-box  rounded-xl ">
+      <a href="#structure"> <button class="    p-4">Organization Structure - DMIC </button></a>
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+<section class="mt-6  px-3  text-gray-500 font-semibold leading-8">
+
+  <div id="Vision" class="  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+
+    <div>
+
+      <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+        Vision for DMIC
+      </h1>
+    </div>
+  </div>
+
+  <div class="mt-5">
+
+    <iframe class="float-right m-[10px]" src="https://www.youtube.com/embed/DaGNCtuDmVw?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <div>
+      <p>
+        The vision for DMIC is to create strong economic base with globally competitive environment and state-of-the-art infrastructure to activate local commerce, enhance foreign investments and attain sustainable development.
+      </p>
+
+      <p class="mt-4">Delhi-Mumbai Industrial Corridor is to be conceived as a Model Industrial Corridor of international standards with emphasis on expanding the manufacturing and services base and develop DMIC as the ‘Global Manufacturing and Trading Hub’.</p>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!--  -->
+
+  <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="text-blue-900 text-xl  font-bold">
+        Delhi - Mumbai Industrial Corridor (DMIC)
+
+      </h1>
+    </div>
+  </div>
+
+
+  <div class="mt-5 max-md:flex max-md:flex-col">
+
+    <div class="mt-4 max-md:flex max-md:justify-center">
+      <img class="float-left md:m-[10px] h-[20rem] rounded-lg shadow-xl border" src="{% static 'dholeraSir-images\DMIC\dmic_3.jpg' %}" alt="">
+    </div>
+
+    <div class="pt-3">
+
+
+      <div class="flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            DMIC : a high impact industrial area within 150 km distance on both side of the DFC
+
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Area under Influence- 14% & Population- 17% of the Country
+
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Total Population: 173.4 Million
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Total Workers: 68.36 Million
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Total 82 Districts of Six States within the Influence Area (excluding MP)
+
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            25 industrial nodes have been proposed along the DMIC
+
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <p class="mt-6">The Government of India is setting up a multi-modal Dedicated Freight Corridor (DFC) between Delhi and Mumbai. Out of the total 1483 kms of the length of DFC, 38% is falling in Gujarat. The area of 150 kms on the both sides of the DFC will be developed as DMIC. It will be a high impact industrial corridor.</p>
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <!--  -->
+
+  <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="text-blue-900 text-xl  font-bold">
+        Unlimited Opportunities
+
+
+      </h1>
+    </div>
+  </div>
+
+  <p class="mt-4">
+    DMIC is to be developed as a Global Manufacturing and Trading Hub of India supported by world class infrastructure and enablining policy framework, It will become "the engine for economic resurgence of the coutry"
+  </p>
+
+
+
+  <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="text-blue-900 text-xl  font-bold">
+        DMIC Project Goals:
+
+      </h1>
+    </div>
+  </div>
+
+
+
+  <div class="mt-4 flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="">
+        Double the employment potential in five years (14.87% CAGR)
+
+
+      </h1>
+    </div>
+  </div>
+
+
+  <div class="mt-4 flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="">
+        Triple industrial output in five years (24.57% CAGR)
+
+
+      </h1>
+    </div>
+  </div>
+
+
+
+
+  <div class="mt-4 flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="">
+        Quadruple exports from the region in five years(31.95% CAGR)
+
+
+      </h1>
+    </div>
+  </div>
+
+
+  <!-- 
+   -->
+
+
+  <div id="" class="mt-10  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 1.8rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+    <div>
+
+      <h1 class="text-blue-900 text-xl  font-bold">
+        DMIC in Gujarat <span class="text-red-600 text-sm">-Dholera SIR to be the most prime location...</span>
+
+
+      </h1>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div>
+      <img class="float-left m-[10px] rounded-lg shadow-lg border  " src="{% static 'dholeraSir-images\DMIC\DMIC.jpg' %}" alt="">
+    </div>
+
+
+    <div class="pt-4">
+
+      <p class="">Out of the total twenty four industrial nodes planned along the DMIC, six nodes (two investment regions and four industrial areas) have been proposed for the State of Gujarat.</p>
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Dholera SIR is the first such node, taken up for developement by the Government of Gujarat.
+
+
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            62% of the total area of Guajrat covered
+
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            18 out of 26 District within the influence Area
+
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Major cities on DMIC:Ahmedabad, Vadodara, Surat
+
+          </h1>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            1/3rd of total investment will be in Guajrat
+
+
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Estimated employment: 8 lacs
+
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Gujarat's ports to cater to foreign & hinterland markets
+
+
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            World class connectivity between the Ports, nodes & DFC
+
+          </h1>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4 flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+
+        <div>
+
+          <h1 class="">
+            Six logistics parks being developed along the DFC
+
+          </h1>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!--  -->
+
+  <div id="Goals" class="mt-10  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+
+    <div>
+
+      <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+        Project Goals
+      </h1>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div>
+        <img class="float-left m-[10px] rounded-lg shadow-xl border" src="{% static 'dholeraSir-images\DMIC\DMIC4.jpg' %}" alt="">
+    </div>
+
+
+    <div class="pt-3">
+
+        <p>The developmental planning for DMIC aims to achieve certain end results with implementation that would ensure realization of envisaged vision for the project and lead to economic development.</p>
+
+        <p class="mt-4">
+            Accordingly the project goals for DMIC are
+        </p>
+
+        <div class="mt-4 flex items-center flex-row  gap-3">
+
+            <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+            <div>
+    
+              <h1 class="">
+                Double employment potential in five years (14.87% CAGR)
+    
+              </h1>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center flex-row  gap-3">
+
+            <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+            <div>
+    
+              <h1 class="">
+                Triple industrial output in five years (24.57% CAGR)
+    
+              </h1>
+            </div>
+          </div>
+
+
+          <div class="mt-4 flex items-center flex-row  gap-3">
+
+            <img style="width: auto; height: 1.2rem;" src="{% static 'dholeraSir-images\arw.jpg' %}" alt="">
+    
+            <div>
+    
+              <h1 class="">
+                Quadruple exports from the region in five years (31.95% CAGR)
+    
+              </h1>
+            </div>
+          </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <div id="implementation" class="mt-7  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+
+    <div>
+
+      <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+        Project Implementation-DMIC
+      </h1>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div>
+        <img src="{% static 'dholeraSir-images\DMIC\DMIC3.jpg' %}" alt="">
+    </div>
+
+    <div class="pt-3">
+        <p>Government of India has incorporated a special purpose vehicle, Delhi Mumbai Industrial Corridor Development Corporation (DMICDC), specially envisaged to coordinate DMIC Project Development, Finance and Implementation, headed by a full time Chairman and Directors and having representation from the Government of India and Financial Institutions.
+        </p>
+
+        <p class="mt-4">
+            An Apex Authority has been constituted under the chairmanship of Union Finance Minister with concerned Central Ministers and Chief Ministers of respective DMIC States as Members for providing overall guidance for planning and issue necessary approvals.
+        </p>
+
+        <p class="mt-4">
+            DMICDC will undertake project development activity for various central government projects and also help in assisting state governments, wherever desired. DMICDC will be responsible for assisting state governments in raising finances on the basis of a sovereign guarantee. The corporate entity will have a shell structure with 49% contribution by GOI and the remaining by Financial Institutions and other infrastructure organizations.
+        </p>
+
+        <p class="mt-4">
+            DMICDC will also act as a pass through entity for specific projects and raise Project Development Fund (PDF) from GOI, GOJ and FIIs. The PDF is proposed to be used as a revolving fund, specifically for undertaking project development activities (e.g. DPR preparation etc.), and shall be recovered from the successful bidders. This fund will also ensure availability of uninterrupted funds for various preparatory activities. The designatories of respective State Governments and the DFC implementing agency could be represented as Directors on the Board of DMICDC.
+        </p>
+
+
+        <p class="mt-4">
+            It is envisaged that funding for DMIC project could be either through nodal agencies (budgetary/extra budgetary provisions) or through Viability Gap Funding/Long term soft loans extended to the Project SPVs. DMICDC would facilitate this process by using a sovereign guarantee provided by the Central government. Moreover, the SPVs could also borrow on their own balance sheets or project recourse basis.
+        </p>
+
+       
+
+    </div>
+
+  </div>
+
+
+
+  <div id="structure" class="mt-7  flex items-center flex-row  gap-3">
+
+    <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+
+    <div>
+
+      <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+        Organization Structure-DMIC
+      </h1>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <p>Current shareholding pattern of DMICDC</p>
+
+    <div class="flex items-center justify-center">
+
+ 
+    <table class="mt-3 border max-sm:text-sm text-gray-700" width="98%" border="1" cellpadding="3" cellspacing="0" style="margin-bottom:15px; border-color:#999999; text-align:center;">
+
+        <tr class="border-2 text-black">
+        <th width="8%" bgcolor="#E5E5E5"><div align="center" >Sr. No.
+          </td>
+        </div>
+        <th width="78%" bgcolor="#E5E5E5"><div align="center" >Shareholder
+          </td>
+        </div>
+        <th width="14%" bgcolor="#E5E5E5"><div align="center" >Percentage(%)
+          </td>
+        </div>
+        </tr>
+        
+        <tr class="border-2">
+        <td>1</td>
+        <td>Department of Industrial Policy and Promoition, Ministry of Commerce and Industries, Government of India</td>
+        <td>49</td>
+        </tr>
+        
+        <tr class="border-2">
+        <td>2</td>
+        <td>Infrastructure Leasing &amp; Financial Services Limited</td>
+        <td>41</td>
+        </tr>
+        
+        <tr class="border-2">
+        <td>3</td>
+        <td>Infrastructure Development Finance Company Limited</td>
+        <td>10</td>
+        </tr>
+        </table>   
+    </div>
+  </div>
+
+</section>
+
+
+
+
+{% endblock content %}

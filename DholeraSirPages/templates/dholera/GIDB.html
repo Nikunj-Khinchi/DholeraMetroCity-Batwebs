@@ -1,0 +1,92 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+
+GIDB | Dholera Metro City
+
+{% endblock title %}
+
+{% block content %}
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (window.innerWidth < 700) {
+          image.src = "{% static 'dholeraSir-images\GIDB\gidb_header_m.jpg' %}"; // Replace with the path to the new image
+        } else {
+          image.src = "{% static 'dholeraSir-images\GIDB\gidb_header.jpg' %}"; // Replace with the original image path
+        }
+      }
+  
+      window.addEventListener("load", changeImage);
+      window.addEventListener("resize", changeImage);
+    </script>
+  </div>
+
+  <section class="mt-6 px-4">
+    <div  class="  flex items-center flex-row  gap-3">
+
+        <img style="width: auto; height: 2.8rem;" src="{% static 'images\Download page\arrow-right-icon.png' %}" alt="">
+    
+        <div>
+    
+          <h1 class="text-2xl  max-md:text-xl font-bold text-purple-800">
+            GIDB - NODAL AGENCY
+          </h1>
+        </div>
+      </div>
+
+      <p class="mt-4 font-semibold text-gray-600 leading-8">Gujarat Infrastructure Development Board (GIDB) headed by Hon. CM will be the Apex Authority. GIDB can delegate such powers and functions to its Executive Committee headed by Hon. MOS (Ind) . Core functions of the Apex Authority like approval and modification in development plan, town planning scheme and general development regulations shall not be delegated to any committees. Powers and functions of the Apex Authority.</p>
+  </section>
+
+
+  <section class="mt-10 ">
+     
+    <div class="flex flex-grow justify-center  flex-wrap  gap-[3.5rem]">
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">DMIC PROJECTS</h1>
+        <p class="mt-5 text-base font-semibold">Delhi Mumbai Industrial Corridor</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">DFC PROJECTS</h1>
+        <p class="mt-5 text-base  font-semibold">Dedicated Freight Corridor</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">GIDB</h1>
+        <p class="mt-5 text-base  font-semibold">Gujarat infrastructure Development Board</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">D-RDA</h1>
+        <p class="mt-5  text-base font-semibold">Dholera - Regional Development Authority</p>
+      </div>
+
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">Dholera Sir</h1>
+        <p class="mt-5 text-base  font-semibold">Special Investment Region</p>
+      </div>
+
+
+      <div class="py-5 px-1 w-[10rem] text-center rounded-lg shadow-2xl bg-sky-700 text-white">
+        <h1 class="text-2xl font-semibold">Early Bird Projects</h1>
+      </div>
+
+      
+    </div>
+  </section>
+
+{% endblock content %}

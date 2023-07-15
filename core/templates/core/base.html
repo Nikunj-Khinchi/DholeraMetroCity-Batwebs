@@ -1,0 +1,1002 @@
+{% load static tailwind_tags %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock title %} </title>
+  
+  <link rel="shortcut icon" href="{% static 'images\fav-icon-home.png' %}" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/f65ddbb7ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+  {% tailwind_css %}
+
+
+
+</head>
+
+
+
+<body id="top">
+
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+
+
+  <style>
+
+
+    .nav-color {
+      background-color: rgb(158, 198, 5);
+    }
+
+    .nav-color1 {
+      background-color: rgb(231, 237, 207);
+      
+      
+    }
+
+    .carousel .flickity-page-dots {
+
+      visibility: hidden;
+    }
+
+    .second-carousel .flickity-page-dots {
+      bottom: 0px;
+
+      visibility: visible;
+    }
+
+    .second-carousel .flickity-page-dots .dot {
+      background-color: orange;
+
+
+    }
+
+    .scroll-nav::-webkit-scrollbar {
+      width: 0.5rem;
+      /* Adjust the width to change the space for scroll */
+    }
+
+    .flickity-prev-next-button {
+      color: rgb(255, 132, 0);
+      opacity: 0.5;
+
+
+    }
+
+    .flickity-prev-next-button:hover {
+      color: rgb(255, 132, 0);
+      opacity: 1;
+
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <header class="">
+
+    {% block refer-earn %}
+
+    {% endblock refer-earn %}
+
+    <div id="arrow" class="hidden fixed z-10 bottom-5 right-0 mb-4 px-8">
+      <div>
+        <a href="#top">
+          <img class="h-9 w-9 rotate-180 bg-black p-2 rounded-md" src="{% static 'about-images\up-arrow1.png'  %}" alt=""></a>
+      </div>
+    </div>
+
+
+
+    <script defer>
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 0 ||
+          document.documentElement.scrollTop > 1000) {
+
+          document.getElementById('arrow').classList.remove("hidden")
+
+
+
+
+        } else {
+
+          document.getElementById('arrow').classList.add("hidden")
+
+
+        }
+      }
+    </script>
+
+    <div class="fixed z-10 bottom-5 mb-4 px-8">
+      <div>
+        <a href="https://api.whatsapp.com/send?l=en&phone=918866333000&text=Hi,%C2%A0Please%20send%20me%20project%20information%20and%20call%20me%20on%20this%20number%20for%20more%20information.">
+          <img class="max-sm:h-11" src="{% static 'images\whatsapp (1).png' %}" alt=""></a>
+      </div>
+    </div>
+
+
+    <nav class="
+            flex flex-wrap
+            items-center
+            justify-between
+            w-full
+            py-2   
+            px-2
+            text-base text-gray-700
+            nav-color
+            fixed
+            top-0
+            z-50
+            border-b shadow-lg
+          ">
+      <div class="px-4">
+        <a href="/">
+          <img src="{% static 'images\dholeraMetroCity-logo.jpg' %}" style="height: 4rem; " alt="">
+        </a>
+      </div>
+
+      <a id="menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer lg:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+      <div class="hidden w-full  lg:flex lg:items-center lg:w-auto" id="menu">
+        <style>
+          @media only screen and (max-width: 1025px){
+            .overflow-bar{
+              overflow-y: auto;
+            }
+
+          }
+        </style>
+        <ul class="
+                scroll-nav 
+               
+                overflow-bar
+                pt-4
+                text-sm
+               text-black
+                font-semibold
+                lg:flex
+                lg:justify-between  
+                lg:items-center 
+                lg:pt-0">
+
+
+          <li class=" max-md:flex max-md:justify-center ">
+
+
+
+            <div class="dropdown  inline-block z-50 relative hover:bg-gray-800 hover:text-white">
+              <button class="  font-semibold  px-4 rounded  inline-flex items-center">
+                <span class=" p-2">About us</span>
+
+              </button>
+              <div class="">
+
+              
+              <ul class="dropdown-menu w-52   nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-10 absolute hidden  text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'AboutUs:about' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'AboutUs:about' %}#ourStrength" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Our Strength
+                  </a>
+                </li>
+
+                <li>
+                  <a href="{% url 'AboutUs:about' %}#We-are-member-of" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    We Are Member Of
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Group Of Website
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'AboutUs:about' %}#Our-Esteem-Investors" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Our Esteem Investors
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'AboutUs:about' %}#our-Testimonial" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Our Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'AboutUs:privacy' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Client Privacy
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'download:download' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Download
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'AboutUs:site-map' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Sitemap
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'core:RERA'  %}" target="_blank" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    RERA
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+
+          </li>
+
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+
+          <li class="max-md:flex max-md:justify-center">
+            <div class="dropdown inline-block relative  hover:bg-gray-800 hover:text-white">
+              <button class="  font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Our Projects</span>
+
+              </button>
+              <ul class="dropdown-menu  w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5006' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Live Booking Status DMC-5006
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5005' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Live Booking Status DMC-5005
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5004' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-5004
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5003' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-5003
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5002' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-5002
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-5001' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-5001
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-4' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-4
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-3' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-3
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-2' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-2
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'ourProject:Live-Booking-Status-DMC-1' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Metro City-1
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Dholera Sir</span>
+
+              </button>
+              <ul class="dropdown-menu w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'DholeraSirPages:index' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Sir
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'DholeraSirPages:Connectivity' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Connectivity
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:Dholera-Sir-Projects' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera SIR Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:Mega-Projects' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Mega Projects
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="{%  url 'DholeraSirPages:Dholera-sir-projects-update' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera SIR - Running & Completed Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:Dholera-Sir-Current-Status' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera SIR Current Status
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="{%  url 'DholeraSirPages:DMIC-Projects' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    DMIC Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:DFC-Projects' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    DFC Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:GIDB' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    GIDB
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:D-RDA' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    D-RDA
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">News</span>
+
+              </button>
+              <ul class="dropdown-menu w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'NewsApps:index' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    News Papers
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <button class="  font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Gallery</span>
+
+              </button>
+              <ul class="dropdown-menu w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'PhotoGallery:index' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Photo Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'PhotoGallery:DMC-Site-Progress' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    DMC Site Progress
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'PhotoGallery:Investor-Visit' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Investor Visit Memories
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'PhotoGallery:Investor-Feedback' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Investor's Feedback
+                  </a>
+                </li>
+                <li>
+                  <a href="{%  url 'DholeraSirPages:Dholera-Sir-Work-Progress' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Dholera Sir Progress
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="{% url 'PhotoGallery:Video-Gallery' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Video Gallery
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <button class="  font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Blog</span>
+
+              </button>
+              <ul class="dropdown-menu w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'blog:index' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Blog-1
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'blog:blog-2' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Blog-2
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'blog:resale-Booking-Status-Dholera-Metro-City' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Resale Plot
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Consultancy</span>
+
+              </button>
+              <ul class="dropdown-menu w-[15rem]   nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-lily-dholera-residential-township' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Lily Dholera Residential Township
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-rose-dholera-residential-township' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Rose Dholera Residential Township
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-lotus-dholera-residential-township' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Lotus Dholera Residential Township
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-lotus-commercial-hub' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Lotus Dholera Commercial Hub
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-lotus-industrial-park' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Lotus Dholera Industrial Park
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-rose-industrial-park' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Rose Dholera Industrial Park
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-lily-industrial-park' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Lily Dholera Industrial Park
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-orchid-industrial-park' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Orchid Dholera Industrial Park
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'consultancy:Live-Booking-Status-rose-logistics-park' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Rose Dholera Logistics Park
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+        
+
+
+          <li class="max-md:flex max-md:justify-center   ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white max-sm:borde">
+              <button class="  font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="">Contact Us</span>
+
+              </button>
+              <ul class="dropdown-menu w-48 nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-50 absolute hidden text-gray-800 pt-1">
+                <li>
+                  <a href="{% url 'Contactus:inquiry-now' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Inquiry
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'Contactus:site-visit' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Site Visit
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'Contactus:NRI' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    NRI
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'Contactus:Career' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    Career
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+         
+          <li class="max-md:flex max-md:justify-center ">
+            <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
+              <a href="{% url 'core:Project-Land' %}">
+              <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                  <span>Project Land</span>
+    
+                
+
+              </button>
+            </a>
+            </div>
+          </li>
+          
+
+          <!-- <li class="relative parent">
+            <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
+              <span>News</span>
+            </a>
+            <ul class="child transition  duration-300 lg:absolute  top-full  md:w-48 nav-color1 lg:shadow-lg md:rounded-b ">
+              <li>
+                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                  Online News
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                  News Papers
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                  Monthly News Letters
+                </a>
+              </li>
+            </ul>
+          </li> -->
+
+         
+
+          <!-- <li class="relative parent">
+            <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
+              <span>Blog</span>
+
+            </a>
+            <ul class="child transition  duration-300 lg:absolute top-full  md:w-48 nav-color1 lg:shadow-lg md:rounded-b ">
+            
+              <li>
+                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                  Resale Help
+                </a>
+              </li>
+            </ul>
+          </li> -->
+
+         
+
+
+          
+          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
+         
+
+          <li class="max-md:flex max-md:justify-center max-md:mt-3  rounded-lg  " >
+            <div style="background-color: rgb(255, 255, 0); ">
+
+            
+            <a href="#" class="flex   justify-between md:inline-flex p-4 font-semibold items-center  hover:rounded-lg hover:bg-gray-800 hover:text-white space-x-2">
+              <span>Investor Login</span>
+
+            </a>
+          </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-20 ">
+    <div>
+      <div class="py-2  flex  justify-end" style="background-color: rgb(108, 0, 108);">
+        <div class="flex flex-wrap items-center justify-center gap-2">
+
+
+          <div class="flex flex-row gap-2 items-center justify-center">
+          
+            <img class="h-[1.8rem] " src="{% static 'images\whatsapp (1).png' %}" alt=""><span class="text-base text-white"> 8866333000</span>
+          </div>
+          
+
+          <div>
+
+            <img class=" " src="{% static 'images/social/facebook_dholerametrocity.png' %}" alt="">
+          </div>
+
+          <div>
+
+            <img class="  " src="{% static 'images\social\twitter_dholerametrocity.png'  %}" alt="">
+          </div>
+
+          <div>
+
+            <img class=" " src="{% static 'images\social\linkedin_dholerametrocity.png' %}" alt="">
+          </div>
+      
+          <div>
+            <img class=" " src="{% static 'images\social\youtube_dholerametrocity.png' %}" alt="">
+          </div>
+
+          <div>
+
+                <img class="" src="{% static 'images\social\wordpress_Dholera_Metro_City.png' %}" alt="">
+              </div>
+          <i>&nbsp;</i>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- index.html -->
+    <div class="">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+
+    <!-- Carousel -->
+
+
+
+    <div class="mt-5 flex justify-center ">
+
+
+
+      <div class="md:w-[40%] p-3 rounded-md shadow-xl flex flex-col justify-center border-2 border-solid border-orange-600  "> 
+          <h4 class="text-xl font-semibold bg-orange-500 p-3 text-center">May I Help You?</h4>
+     
+          <!-- https://dholerametrocityoffer.com/CRM_System/entrydirect_new_formula.php?add_entry -->
+          <form class="mt-4 p-3 max-md:text-center" action="" method="" enctype="multipart/form-data" style="float:left" id="login_form">
+            {% csrf_token %}
+            
+           Name :
+          <input type="text"  required name="name" pattern="[a-zA-Z\s]+" placeholder="Your Name" id="name"  maxlength="30" class="md:w-[100%] "><br><br>
+          
+          
+          Mobile : 
+          <input type="number" name="mobile" placeholder="phone" class="md:w-[100%] " required="" id="mobile" ><br><br>
+          
+          
+          E-mail :
+          <input type="email" name="email" placeholder="email" class="md:w-[100%] " required="" id="email" ><br><br>
+          
+          <style>
+            .color{
+              background-color: rgb(249, 115, 22);
+            }
+
+            .color:hover{
+              background-color: olivedrab;
+            }
+          </style>
+          
+          <input type="submit" value="Submit" id="form-submit-button" class="p-3 md:w-[100%]  text-black font-bold px-4 rounded-md bg-orange-500 color" name="submit_cs" >
+          
+          <input type="hidden" name="current_url" id="current_url"> <!-- Hidden input field for current URL -->
+           
+           
+          
+          
+         
+          
+          </form>
+          
+          <script>
+            // Get the current URL and set it as the value of the hidden input field
+            document.getElementById('current_url').value = window.location.href;
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+          $(document).ready(function() {
+            $('#login_form').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Disable the submit button to prevent multiple clicks
+                $('#form-submit-button').prop('disabled', true);
+                
+                // Make AJAX request to submit the form data
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'Contactus:inquiry-now' %}",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        // Clear the form fields
+                        $('#login_form')[0].reset();
+                        // Enable the submit button
+                        $('#form-submit-button').prop('disabled', false);
+                        // Display success popup
+                        alert('Your inquiry has been submitted successfully.');
+                    },
+                    error: function() {
+                        // Enable the submit button in case of an error
+                        $('#form-submit-button').prop('disabled', false);
+                        alert('Oops! Something went wrong. Please try again.');
+                    }
+                });
+            });
+        });
+      </script>
+
+          </div></div>
+
+
+    <!-- footerr -->
+
+
+    <footer class="mt-5">
+      <hr class="border-t-4 border-solid border-t-green-800 ">
+      <style>
+        #header-footer {
+          background-image: url('{% static "images/header_footer.jpg" %}');
+          background-size: contain;
+        }
+      </style>
+      <div id="header-footer">
+        <div class=" mt-12 px-24 max-md:px-11 max-sm:px-5">
+          <div class="grid grid-cols-4 max-md:grid-cols-3    max-sm:grid-cols-2 gap-7  ">
+
+            <div class="flex flex-col font-semibold">
+              <p><a href="{% url 'AboutUs:about' %}"><span class=" hover:border-black hover:border-b-[0.8px]">About Us</span></a> </p>
+              <p><a href="{% url 'AboutUs:privacy' %}"> <span class=" hover:border-black hover:border-b-[0.8px]">Privacy Policy</span></a></p>
+              <p><a href="{% url 'core:Terms&Conditions' %}"> <span class=" hover:border-black hover:border-b-[0.8px]">Term & Conditons</span></a></p>
+              <p><a href="{% url 'core:Shipping-Policy' %}"> <span class=" hover:border-black hover:border-b-[0.8px]">Shipping Policy</span></a></p>
+              <p><a href="{% url 'core:refund-cancellation-policy' %}"> <span class=" hover:border-black hover:border-b-[0.8px]">Refund/Cancellation Policy</span></a></p>
+            </div>
+
+            <div class="flex flex-col font-semibold">
+              <style>
+                .blink {
+                  animation: blinkAnimation 1s infinite;
+                }
+
+                @keyframes blinkAnimation {
+                  0% {
+                    color: red;
+                  }
+
+                  25% {
+                    color: red;
+                  }
+
+                  35% {
+                    color: red;
+                  }
+
+                  50% {
+                    color: black;
+                  }
+
+                  65% {
+                    color: red;
+                  }
+
+                  75% {
+                    color: red;
+                  }
+
+
+                  100% {
+                    color: red;
+                  }
+                }
+              </style>
+              <p id="blinkingText" class="blink font-bold text-base text-red-500"><a href="{% url 'ourProject:Live-Booking-Status-DMC-5004' %}"><span class=" hover:border-red-600 hover:border-b-[0.8px]">Live Booking Status DMC-5004</span></a></p>
+              <script>
+                function toggleBlink() {
+                  const blinkingText = document.getElementById("blinkingText");
+                  blinkingText.classList.toggle("blink");
+                }
+                setInterval(toggleBlink, 800);
+              </script>
+
+              <p><a href="{% url 'PhotoGallery:DMC-Site-Progress' %}"><span class=" hover:border-black hover:border-b-[0.8px]" s>Live Site Progress</span></a></p>
+              <p class=""><span class=" hover:border-black hover:border-b-[0.8px]">Constructed Properties</span></p>
+            </div>
+
+
+
+            <div class="font-semibold">
+              <p class=""><a href="{% url 'DholeraSirPages:index' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Dholera SIR</span></a></p>
+              <p class=""><a href="{%  url 'DholeraSirPages:Dholera-Sir-Projects' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Dholera SIR Progress</span></a></p>
+              <p class=""><a href="{% url 'DholeraSirPages:Dholera-International-Airport' %}"><span class=" hover:border-black hover:border-b-[0.8px]">International Airport</span></a></p>
+
+
+            </div>
+
+
+          
+            <div class="font-semibold">
+              <p class=""><a href="{% url 'Contactus:inquiry-now' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Contact Us</span></a></p>
+              <p class=""><a href="{% url 'Contactus:Career' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Career</span></a></p>
+              <p class=""><a href="{% url 'Contactus:site-visit' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Site Visit</span></a></p>
+              <p class=""><a href="{% url 'AboutUs:site-map' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Site Map</span></a></p>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <div class="mt-28">
+
+          <div class="px-28 max-sm:px-10 grid grid-cols-3 align-middle max-md:grid-cols-2 gap-8">
+
+            <div class="text-center flex justify-center">
+              <img class="h-28" src="{% static 'images\group-logo.png' %}" alt="">
+            </div>
+
+            <div>
+              <p class="font-bold text-base max-sm:text-sm text-gray-600">Dholera Metro City</p>
+              <p>337, Sector-8</p>
+              <p>Near CH-2 Circle, CH-Road,</p>
+              <p>Gandhinagar-382007</p>
+              <p class="font-bold text-base text-gray-600">Phone:8866333000</p>
+            </div>
+
+            <div class="grid grid-cols-7 max-md:grid-cols-4 max-sm:gap-4  items-center">
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images/social/facebook_dholerametrocity.png' %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem]  " src="{% static 'images\social\twitter_dholerametrocity.png'  %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images\social\linkedin_dholerametrocity.png' %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images\social\blogger_Dholera_Metro_City.png' %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images\social\wordpress_Dholera_Metro_City.png' %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images\social\youtube_dholerametrocity.png' %}" alt="">
+              </div>
+              <div>
+
+                <img class="h-[2rem] " src="{% static 'images\social\instagram-logo.png' %}" alt="">
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <hr class="mt-4 border-t-4 border-solid border-t-green-800 ">
+
+        <div class="mt-8">
+
+          <div class="py-7 px-28 max-sm:px-8">
+            <div class="text-center">
+              <h1><span class="font-light hover:border-black hover:border-b-[0.8px]">Copyright@ 2003-2025. All Rights Reserved</span></h1>
+            </div>
+
+            <div class="mt-2 text-center flex flex-row justify-center items-center">
+              <div>
+                <img src="{% static 'images\TRUSTe_Seal.gif' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images\siteseal_gd_3_h_l_m.gif' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images\trust_logo.gif' %}" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="pb-4 text-center text-xs text-gray-400 font-bold">
+            <p>All Pictures/Images shown on this website are for illustration purpose only. Actual product may vary due to product enhancement.</p>
+
+            <p class="mt-2 text-black text-xs font-bold">For any website query : <a href="https://batwebs.com/" class=" text-blue-600 hover:text-red-600">batwebs.com</a></p>
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+<script>
+  const counters = document.querySelectorAll('.counter')
+  counters.forEach(counter => {
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target')
+      const c = +counter.innerText
+      const increment = target / 200
+      if (c < target) {
+        counter.innerText = `${Math.ceil(c + increment)}`
+
+        if (target < 16) {
+          setTimeout(updateCounter, 150)
+
+        } else {
+          setTimeout(updateCounter, 8)
+
+        }
+      } else {
+        counter.innerText = target
+      }
+    }
+    updateCounter()
+  })
+
+
+  const button = document.querySelector('#menu-button');
+  const menu = document.querySelector('#menu');
+
+
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</html>

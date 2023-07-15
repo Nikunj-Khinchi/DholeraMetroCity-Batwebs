@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Site Map- Dholera Metro City
+{% endblock title %}
+
+{% block content %}
+
+<div>
+    <div>
+      <img id="myImage" class="w-full h-auto max-sm:h-36" src="" alt="">
+    </div>
+    <script>
+      function changeImage() {
+          var image = document.getElementById("myImage");
+          if (window.innerWidth < 700) {
+            image.src = "{% static 'about-images\Site-map\site_map_header_m.jpg' %}"; // Replace with the path to the new image
+          } else {
+            image.src = "{% static 'about-images\Site-map\site_map_header.jpg' %}"; // Replace with the original image path
+          }
+        }
+    
+        window.addEventListener("load", changeImage);
+        window.addEventListener("resize", changeImage);
+      </script>
+  </div>
+
+
+  <div class="mt-10 px-16 max-sm:px-4">
+    <div>
+        <img src="{% static 'about-images\Site-map\sitemap_desktop.jpg' %}" alt="">
+    </div>
+  </div>
+
+
+
+{% endblock content %}
