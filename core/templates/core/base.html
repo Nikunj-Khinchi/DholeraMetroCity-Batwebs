@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock title %} </title>
-  
+
   <link rel="shortcut icon" href="{% static 'images\fav-icon-home.png' %}" type="image/x-icon">
   <script src="https://kit.fontawesome.com/f65ddbb7ce.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -34,16 +34,14 @@
 
 
   <style>
-
-
     .nav-color {
       background-color: rgb(158, 198, 5);
     }
 
     .nav-color1 {
       background-color: rgb(231, 237, 207);
-      
-      
+
+
     }
 
     .carousel .flickity-page-dots {
@@ -159,8 +157,8 @@
       </a>
       <div class="hidden w-full  lg:flex lg:items-center lg:w-auto" id="menu">
         <style>
-          @media only screen and (max-width: 1025px){
-            .overflow-bar{
+          @media only screen and (max-width: 1025px) {
+            .overflow-bar {
               overflow-y: auto;
             }
 
@@ -191,62 +189,62 @@
               </button>
               <div class="">
 
-              
-              <ul class="dropdown-menu w-52   nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-10 absolute hidden  text-gray-700 pt-1">
-                <li>
-                  <a href="{% url 'AboutUs:about' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'AboutUs:about' %}#ourStrength" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Our Strength
-                  </a>
-                </li>
 
-                <li>
-                  <a href="{% url 'AboutUs:about' %}#We-are-member-of" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    We Are Member Of
-                  </a>
-                </li>
+                <ul class="dropdown-menu w-52   nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-10 absolute hidden  text-gray-700 pt-1">
+                  <li>
+                    <a href="{% url 'AboutUs:about' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'AboutUs:about' %}#ourStrength" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Our Strength
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Group Of Website
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'AboutUs:about' %}#Our-Esteem-Investors" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Our Esteem Investors
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'AboutUs:about' %}#our-Testimonial" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Our Testimonials
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'AboutUs:privacy' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Client Privacy
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'download:download' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Download
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'AboutUs:site-map' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    Sitemap
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'core:RERA'  %}" target="_blank" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                    RERA
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  <li>
+                    <a href="{% url 'AboutUs:about' %}#We-are-member-of" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      We Are Member Of
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Group Of Website
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'AboutUs:about' %}#Our-Esteem-Investors" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Our Esteem Investors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'AboutUs:about' %}#our-Testimonial" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Our Testimonials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'AboutUs:privacy' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Client Privacy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'download:download' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Download
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'AboutUs:site-map' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      Sitemap
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'core:RERA'  %}" target="_blank" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                      RERA
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
 
@@ -345,7 +343,7 @@
                     Mega Projects
                   </a>
                 </li>
-  
+
                 <li>
                   <a href="{%  url 'DholeraSirPages:Dholera-sir-projects-update' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                     Dholera SIR - Running & Completed Projects
@@ -356,7 +354,7 @@
                     Dholera SIR Current Status
                   </a>
                 </li>
-  
+
                 <li>
                   <a href="{%  url 'DholeraSirPages:DMIC-Projects' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                     DMIC Projects
@@ -431,7 +429,7 @@
                     Dholera Sir Progress
                   </a>
                 </li>
-  
+
                 <li>
                   <a href="{% url 'PhotoGallery:Video-Gallery' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                     Video Gallery
@@ -527,7 +525,7 @@
 
 
           <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
-        
+
 
 
           <li class="max-md:flex max-md:justify-center   ">
@@ -562,20 +560,20 @@
           </li>
 
           <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
-         
+
           <li class="max-md:flex max-md:justify-center ">
             <div class="dropdown inline-block relative hover:bg-gray-800 hover:text-white">
               <a href="{% url 'core:Project-Land' %}">
-              <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
                   <span>Project Land</span>
-    
-                
 
-              </button>
-            </a>
+
+
+                </button>
+              </a>
             </div>
           </li>
-          
+
 
           <!-- <li class="relative parent">
             <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
@@ -600,7 +598,7 @@
             </ul>
           </li> -->
 
-         
+
 
           <!-- <li class="relative parent">
             <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
@@ -617,22 +615,22 @@
             </ul>
           </li> -->
 
-         
 
 
-          
+
+
           <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
-         
 
-          <li class="max-md:flex max-md:justify-center max-md:mt-3  rounded-lg  " >
+
+          <li class="max-md:flex max-md:justify-center max-md:mt-3  rounded-lg  ">
             <div style="background-color: rgb(255, 255, 0); ">
 
-            
-            <a href="#" class="flex   justify-between md:inline-flex p-4 font-semibold items-center  hover:rounded-lg hover:bg-gray-800 hover:text-white space-x-2">
-              <span>Investor Login</span>
 
-            </a>
-          </div>
+              <a href="#" class="flex   justify-between md:inline-flex p-4 font-semibold items-center  hover:rounded-lg hover:bg-gray-800 hover:text-white space-x-2">
+                <span>Investor Login</span>
+
+              </a>
+            </div>
           </li>
 
         </ul>
@@ -647,10 +645,10 @@
 
 
           <div class="flex flex-row gap-2 items-center justify-center">
-          
+
             <img class="h-[1.8rem] " src="{% static 'images\whatsapp (1).png' %}" alt=""><span class="text-base text-white"> 8866333000</span>
           </div>
-          
+
 
           <div>
 
@@ -666,29 +664,28 @@
 
             <img class=" " src="{% static 'images\social\linkedin_dholerametrocity.png' %}" alt="">
           </div>
-      
+
           <div>
             <img class=" " src="{% static 'images\social\youtube_dholerametrocity.png' %}" alt="">
           </div>
 
           <div>
 
-                <img class="" src="{% static 'images\social\wordpress_Dholera_Metro_City.png' %}" alt="">
-              </div>
+            <img class="" src="{% static 'images\social\wordpress_Dholera_Metro_City.png' %}" alt="">
+          </div>
           <i>&nbsp;</i>
         </div>
       </div>
     </div>
 
 
-    <!-- index.html -->
+
     <div class="">
       {% block content %}
 
       {% endblock content %}
     </div>
 
-    <!-- Carousel -->
 
 
 
@@ -696,84 +693,104 @@
 
 
 
-      <div class="md:w-[40%] p-3 rounded-md shadow-xl flex flex-col justify-center border-2 border-solid border-orange-600  "> 
-          <h4 class="text-xl font-semibold bg-orange-500 p-3 text-center">May I Help You?</h4>
-     
-          <!-- https://dholerametrocityoffer.com/CRM_System/entrydirect_new_formula.php?add_entry -->
-          <form class="mt-4 p-3 max-md:text-center" action="" method="" enctype="multipart/form-data" style="float:left" id="login_form">
-            {% csrf_token %}
-            
-           Name :
-          <input type="text"  required name="name" pattern="[a-zA-Z\s]+" placeholder="Your Name" id="name"  maxlength="30" class="md:w-[100%] "><br><br>
-          
-          
-          Mobile : 
-          <input type="number" name="mobile" placeholder="phone" class="md:w-[100%] " required="" id="mobile" ><br><br>
-          
-          
+      <div class="md:w-[40%] p-3 rounded-md shadow-xl flex flex-col justify-center border-2 border-solid border-orange-600  ">
+        <h4 class="text-xl font-semibold bg-orange-500 p-3 text-center">May I Help You?</h4>
+
+        <!-- https://dholerametrocityoffer.com/CRM_System/entrydirect_new_formula.php?add_entry -->
+        <form class="mt-4 p-3 max-md:text-center" action="" method="" enctype="multipart/form-data" style="float:left" id="login_form">
+          {% csrf_token %}
+
+          Name :
+          <input type="text" required name="name" pattern="[a-zA-Z\s]+" placeholder="Your Name" id="name" maxlength="30" class="md:w-[100%] "><br><br>
+
+
+          Mobile :
+          <input type="number" name="mobile" placeholder="phone" class="md:w-[100%] " required="" id="mobile"><br><br>
+
+
           E-mail :
-          <input type="email" name="email" placeholder="email" class="md:w-[100%] " required="" id="email" ><br><br>
-          
+          <input type="email" name="email" placeholder="email" class="md:w-[100%] " required="" id="email"><br><br>
+
           <style>
-            .color{
+            .color {
               background-color: rgb(249, 115, 22);
             }
 
-            .color:hover{
+            .color:hover {
               background-color: olivedrab;
             }
           </style>
-          
-          <input type="submit" value="Submit" id="form-submit-button" class="p-3 md:w-[100%]  text-black font-bold px-4 rounded-md bg-orange-500 color" name="submit_cs" >
-          
+
+          <input type="submit" value="Submit" id="form-submit-button" class="p-3 md:w-[100%]  text-black font-bold px-4 rounded-md bg-orange-500 color" name="submit_cs">
+
           <input type="hidden" name="current_url" id="current_url"> <!-- Hidden input field for current URL -->
-           
-           
-          
-          
-         
-          
-          </form>
-          
-          <script>
-            // Get the current URL and set it as the value of the hidden input field
-            document.getElementById('current_url').value = window.location.href;
+
+
+
+
+
+        </form>
+
+        <script>
+          // Get the current URL and set it as the value of the hidden input field
+          document.getElementById('current_url').value = window.location.href;
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Your form HTML remains unchanged -->
+
+        <!-- Add a new element to display the success message -->
+        <div id="success-message" style="display: none; color: green; font-weight: bolder;">
+          Your inquiry has been submitted successfully.
+        </div>
+
+        <!-- Add a new element to display the error message -->
+        <div id="error-message" style="display: none; color: red; font-weight: bolder;">
+          Oops! Something went wrong while submitting your inquiry. Please try again later.
+        </div>
+
+        <script>
+          // Get the current URL and set it as the value of the hidden input field
+          document.getElementById('current_url').value = window.location.href;
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         <script>
           $(document).ready(function() {
             $('#login_form').on('submit', function(e) {
-                e.preventDefault();
-                
-                // Disable the submit button to prevent multiple clicks
-                $('#form-submit-button').prop('disabled', true);
-                
-                // Make AJAX request to submit the form data
-                $.ajax({
-                    type: 'POST',
-                    url: "{% url 'Contactus:inquiry-now' %}",
-                    data: $(this).serialize(),
-                    success: function(response) {
-                        // Clear the form fields
-                        $('#login_form')[0].reset();
-                        // Enable the submit button
-                        $('#form-submit-button').prop('disabled', false);
-                        // Display success popup
-                        alert('Your inquiry has been submitted successfully.');
-                    },
-                    error: function() {
-                        // Enable the submit button in case of an error
-                        $('#form-submit-button').prop('disabled', false);
-                        alert('Oops! Something went wrong. Please try again.');
-                    }
-                });
+              e.preventDefault();
+
+              // Disable the submit button to prevent multiple clicks
+              $('#form-submit-button').prop('disabled', true);
+
+              // Make AJAX request to submit the form data
+              $.ajax({
+                type: 'POST',
+                url: "{% url 'Contactus:inquiry-now' %}",
+                data: $(this).serialize(),
+                success: function(response) {
+                  // Clear the form fields
+                  $('#login_form')[0].reset();
+                  // Enable the submit button
+                  $('#form-submit-button').prop('disabled', false);
+                  // Display success popup
+                  $('#success-message').show();
+                  
+                },
+                error: function() {
+                  // Enable the submit button in case of an error
+                  $('#form-submit-button').prop('disabled', false);
+                  $('#error-message').show();
+                  
+                }
+              });
             });
-        });
-      </script>
+          });
+        </script>
 
-          </div></div>
 
+      </div>
+    </div>
 
     <!-- footerr -->
 
@@ -859,7 +876,7 @@
             </div>
 
 
-          
+
             <div class="font-semibold">
               <p class=""><a href="{% url 'Contactus:inquiry-now' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Contact Us</span></a></p>
               <p class=""><a href="{% url 'Contactus:Career' %}"><span class=" hover:border-black hover:border-b-[0.8px]">Career</span></a></p>

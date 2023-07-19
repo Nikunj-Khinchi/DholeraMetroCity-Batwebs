@@ -14,12 +14,22 @@ def Inquiry(request):
         email = request.POST.get('email')
         page = request.POST.get('current_url')
 
-        subject = 'Inquiry by ' + name
+        subject = f'Inquiry by {name}'
         message = f'Name: {name}\n\nEmail: {email}\n\nPhone number: {mobile}\n\nPage: {page}'
-        from_email = (email)  # Sender's email address
+        from_email = email  # Sender's email address
         recipient_list = [settings.EMAIL_HOST_USER]  # Recipient's email address (Nikunj's email)
 
         send_mail(subject, message, from_email, recipient_list)
+        
+        from_email2 = settings.EMAIL_HOST_USER   # Sender's email address
+        recipient_list2 = [email]  
+
+        subject2 = 'Dholera Metro City'
+        message2 = f'Hello, {name}\nThankyou for contacting us we will reach you soon'
+
+        send_mail(subject2, message2, from_email2, recipient_list2)
+       
+        
 
       
         
