@@ -156,3 +156,5 @@ EMAIL_HOST_USER = ''  # Update with your email address
 EMAIL_HOST_PASSWORD = ''  # Update with your email password
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+

@@ -146,7 +146,7 @@
           ">
       <div class="px-4">
         <a href="/">
-          <img src="{% static 'images\dholeraMetroCity-logo.jpg' %}" style="height: 4rem; " alt="">
+          <img src="{% static 'images\dholeraMetroCity-logo.jpg' %}" style="height: 4rem;  " alt="">
         </a>
       </div>
 
@@ -192,11 +192,11 @@
 
                 <ul class="dropdown-menu w-52   nav-color1 lg:shadow-lg md:rounded-b nav-color1 z-10 absolute hidden  text-gray-700 pt-1">
                   <li>
-                    <a href="{% url 'AboutUs:about' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
+                    <a href="{% url 'Contactus:inquiry-now' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                       About us
                     </a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="{% url 'AboutUs:about' %}#ourStrength" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                       Our Strength
                     </a>
@@ -222,7 +222,7 @@
                     <a href="{% url 'AboutUs:about' %}#our-Testimonial" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                       Our Testimonials
                     </a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="{% url 'AboutUs:privacy' %}" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
                       Client Privacy
@@ -575,63 +575,8 @@
           </li>
 
 
-          <!-- <li class="relative parent">
-            <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
-              <span>News</span>
-            </a>
-            <ul class="child transition  duration-300 lg:absolute  top-full  md:w-48 nav-color1 lg:shadow-lg md:rounded-b ">
-              <li>
-                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                  Online News
-                </a>
-              </li>
-              <li>
-                <a href="" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                  News Papers
-                </a>
-              </li>
-              <li>
-                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                  Monthly News Letters
-                </a>
-              </li>
-            </ul>
-          </li> -->
 
 
-
-          <!-- <li class="relative parent">
-            <a href="#" class="flex  justify-between md:inline-flex p-4 font-semibold items-center  hover:bg-gray-800 hover:text-white space-x-2">
-              <span>Blog</span>
-
-            </a>
-            <ul class="child transition  duration-300 lg:absolute top-full  md:w-48 nav-color1 lg:shadow-lg md:rounded-b ">
-            
-              <li>
-                <a href="#" class="flex px-4 py-3 font-semibold max-md:bg-white  hover:bg-gray-800 hover:text-white">
-                  Resale Help
-                </a>
-              </li>
-            </ul>
-          </li> -->
-
-
-
-
-
-          <hr class=" max-sm:visible max-sm:border-[0.5px] max-sm:border-solid">
-
-
-          <li class="max-md:flex max-md:justify-center max-md:mt-3  rounded-lg  ">
-            <div style="background-color: rgb(255, 255, 0); ">
-
-
-              <a href="#" class="flex   justify-between md:inline-flex p-4 font-semibold items-center  hover:rounded-lg hover:bg-gray-800 hover:text-white space-x-2">
-                <span>Investor Login</span>
-
-              </a>
-            </div>
-          </li>
 
         </ul>
       </div>
@@ -639,18 +584,20 @@
   </header>
 
   <main class="mt-20 ">
-    <div>
-      <div class="py-2  flex  justify-end" style="background-color: rgb(108, 0, 108);">
+    <div class="">
+      <div class="py-2 fixed z-10 flex top-[5rem] w-[100%]  justify-end" style="background-color: rgb(108, 0, 108);">
         <div class="flex flex-wrap items-center justify-center gap-2">
 
 
-          <div class="flex flex-row gap-2 items-center justify-center">
+          <a href="https://api.whatsapp.com/send?l=en&phone=918866333000&text=Hi,%C2%A0Please%20send%20me%20project%20information%20and%20call%20me%20on%20this%20number%20for%20more%20information.">
+            <div class="flex flex-row gap-2 items-center justify-center">
 
-            <img class="h-[1.8rem] " src="{% static 'images\whatsapp (1).png' %}" alt=""><span class="text-base text-white"> 8866333000</span>
-          </div>
+              <img class="h-[1.8rem] " src="{% static 'images\whatsapp (1).png' %}" alt=""><span class="text-base text-white"> 8866333000</span>
+            </div>
+          </a>
 
 
-          <div>
+          <div >
 
             <img class=" " src="{% static 'images/social/facebook_dholerametrocity.png' %}" alt="">
           </div>
@@ -680,7 +627,7 @@
 
 
 
-    <div class="">
+    <div class="" style="margin-top: 8rem;">
       {% block content %}
 
       {% endblock content %}
@@ -689,27 +636,28 @@
 
 
 
-    <div class="mt-5 flex justify-center ">
+    <div class="mt-5 flex justify-center  px-10  max-sm:px-5 ">
 
+ 
 
-
-      <div class="md:w-[40%] p-3 rounded-md shadow-xl flex flex-col justify-center border-2 border-solid border-orange-600  ">
+      <div class="flex flex-col  w-[50%] max-md:w-[100%] p-3 rounded-md shadow-xl  border-2 border-solid border-orange-600  ">
         <h4 class="text-xl font-semibold bg-orange-500 p-3 text-center">May I Help You?</h4>
 
-        <!-- https://dholerametrocityoffer.com/CRM_System/entrydirect_new_formula.php?add_entry -->
-        <form class="mt-4 p-3 max-md:text-center" action="" method="" enctype="multipart/form-data" style="float:left" id="login_form">
+       
+        <form class="mt-4 p-3 grid  gap-4"  action="" method="" enctype="multipart/form-data" style="float:left" id="login_form">
           {% csrf_token %}
+          <label for="">
+            Name :
+            <input type="text" required name="name" pattern="[a-zA-Z\s]+" placeholder="Your Name" id="name" maxlength="30" class="w-[100%] "></label>
 
-          Name :
-          <input type="text" required name="name" pattern="[a-zA-Z\s]+" placeholder="Your Name" id="name" maxlength="30" class="md:w-[100%] "><br><br>
+          <label for="">
+            Mobile :
+            <input type="number" name="mobile" placeholder="Phone" class="w-[100%] " required="" id="mobile"></label>
 
-
-          Mobile :
-          <input type="number" name="mobile" placeholder="phone" class="md:w-[100%] " required="" id="mobile"><br><br>
-
-
-          E-mail :
-          <input type="email" name="email" placeholder="email" class="md:w-[100%] " required="" id="email"><br><br>
+          <label for="">
+            E-mail :
+            <input type="email" name="email" placeholder="Email" class="w-[100%] " required="" id="email">
+          </label>
 
           <style>
             .color {
@@ -720,8 +668,10 @@
               background-color: olivedrab;
             }
           </style>
-
-          <input type="submit" value="Submit" id="form-submit-button" class="p-3 md:w-[100%]  text-black font-bold px-4 rounded-md bg-orange-500 color" name="submit_cs">
+         
+            <input type="submit" value="Submit" id="form-submit-button" class="p-3 md:w-[100%]  text-black font-bold px-4 rounded-md bg-orange-500 color" name="submit_cs">
+   
+          
 
           <input type="hidden" name="current_url" id="current_url"> <!-- Hidden input field for current URL -->
 
@@ -775,13 +725,13 @@
                   $('#form-submit-button').prop('disabled', false);
                   // Display success popup
                   $('#success-message').show();
-                  
+
                 },
                 error: function() {
                   // Enable the submit button in case of an error
                   $('#form-submit-button').prop('disabled', false);
                   $('#error-message').show();
-                  
+
                 }
               });
             });
@@ -890,23 +840,18 @@
         </div>
 
 
-        <div class="mt-28">
+        <div class="mt-20">
 
-          <div class="px-28 max-sm:px-10 grid grid-cols-3 align-middle max-md:grid-cols-2 gap-8">
+          <div class="px-28 max-sm:px-5 grid grid-cols-2 align-middle max-md:grid-cols-2 gap-8">
 
             <div class="text-center flex justify-center">
-              <img class="h-28" src="{% static 'images\group-logo.png' %}" alt="">
+              <img src="{% static 'images\dholeraMetroCity-logo.jpg' %}" style="height: 10rem; " alt="">
+
             </div>
 
-            <div>
-              <p class="font-bold text-base max-sm:text-sm text-gray-600">Dholera Metro City</p>
-              <p>337, Sector-8</p>
-              <p>Near CH-2 Circle, CH-Road,</p>
-              <p>Gandhinagar-382007</p>
-              <p class="font-bold text-base text-gray-600">Phone:8866333000</p>
-            </div>
 
-            <div class="grid grid-cols-7 max-md:grid-cols-4 max-sm:gap-4  items-center">
+
+            <div class="flex flex-wrap flex-initial flex-grow items-center justify-center gap-4">
               <div>
 
                 <img class="h-[2rem] " src="{% static 'images/social/facebook_dholerametrocity.png' %}" alt="">
@@ -964,7 +909,7 @@
             </div>
 
           </div>
-          <div class="pb-4 text-center text-xs text-gray-400 font-bold">
+          <div class="pb-4 px-3 text-center text-xs text-gray-400 font-bold">
             <p>All Pictures/Images shown on this website are for illustration purpose only. Actual product may vary due to product enhancement.</p>
 
             <p class="mt-2 text-black text-xs font-bold">For any website query : <a href="https://batwebs.com/" class=" text-blue-600 hover:text-red-600">batwebs.com</a></p>
